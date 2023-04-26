@@ -32,7 +32,7 @@
 Soient *p = 3* et *q = 5*, calculer les clés
 
 1. *n = p x q = 3 x 5 = 15*
-2. *&phi; (n)*
+2. *&phi;(n)*
 
 
 
