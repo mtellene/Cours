@@ -6,7 +6,7 @@ L'exemple décrit dans la suite donne des explications sur la POO
 
 ## Vocabulaire
 
-- Une classe : plan pour créer des objets. Une classe définit les données (**attributs**) et les fonctionnalités (**méthodes**) des objets. On peut accèder aux attributs et méthodes d'un objet avec un point (```.```).
+- **Classe** : plan pour créer des objets. Une classe définit les données (**attributs**) et les fonctionnalités (**méthodes**) des objets. On peut accèder aux attributs et méthodes d'un objet avec un point (```.```).
 
 Exemple :
 ```python
@@ -21,9 +21,9 @@ class Chien:
         print("Waf") 
 ```
 
-- Un objet : élément issu d'une classe possédant les fonctionnalités définit dans la classe auquel il appartient. Un objet correspond souvent à un quelque chose de réel (une voiture, un chien,...).
+- **Objet** : élément issu d'une classe possédant les fonctionnalités définit dans la classe auquel il appartient. Un objet correspond souvent à un quelque chose de réel (une voiture, un chien,...).
 
-- Instanciation : processus de création d'un objet d'une classe. Cette création d'objet se fait grâce à la méthode ```__init__``` de la classe
+- **Instanciation** : processus de création d'un objet d'une classe. Cette création d'objet se fait grâce à la méthode ```__init__``` de la classe
 
 Exemple :
 ```python
