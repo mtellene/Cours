@@ -143,15 +143,72 @@ Donc *d = 5*. On a *Kp(5, 15)* et *Kpr(5, 15)*
 
 Soient *p = 11* et *q = 13* et *e = 24*
 
-1. Calculer le module clé publique/privée.
+1. Calculer le module clé publique/privée
 
-salut
+On calcule *n = 143* et *&phi;(n) = 120*. On se rend compte que la génération de clé est impossible.
 
-2. t
+2. L'exposant public (*e*) est-il valide ? Pourquoi ? On prendra dans la suite *e = 23*
 
+Non l'exposant n'est pas valide car *&phi;(n)* et *e* ne sont pas premiers entre eux.
 
+3. Calculer l'exposant privé (*d*)
 
+*e x d = 1 mod &phi;(n)*
 
+*=> 23 x d = 1 mod 120*
 
+*=> 23 x d = 1 + k x 120*
 
+Afin de calculer *d*, on applique l'algorithme d'Euclide étendue. Ici, nous allons le faire à la main (l'algorithme n'est pas expliqué, seulement les calculs sont donnés)
 
+*=> 120 = 23 x 5 + 5*
+
+*=> 23 = 5 x 4 + 3*
+
+*=> 5 = 3 x 1 + 2*
+
+*=> 3 = 2 x 1 + 1*
+
+*=> 1 = 3 - 2*
+
+*=> 1 = 3 - (5 - 3)*
+
+*=> 1 = 3 - 5 + 3*
+
+*=> 1 = 3 x 2 - 5*
+
+*=> 1 = (23 - 5 x 4) x 2 - 5*
+
+*=> 1 = 23 x 2 - 5 x 8 - 5*
+
+*=> 1 = 23 x 2 - 5 x 9*
+
+*=> 1 = 23 x 2 - (120 - 23 x 5) x 9*
+
+*=> 1 = 23 x 2 - 120 x 9 + 23 x 45*
+
+*=> 1 = 23 x 47 - 120 x 9*
+
+*=> 23 x 47 = 1 + 9 x 120*
+
+Donc *d = 47*. On a *Kp(23, 143)* et *Kpr(47, 143)*
+
+4. Quel est l'espace des messages clairs pour les clés ?
+
+*{0, ..., 142}*
+
+5. Chiffrer *m = 75* avec la clé publique
+
+*c = m^{23} mod 143*
+
+*=> c = 69 mod 143*
+
+Les message chiffré est *c = 69*
+
+5. Déchiffrer le message *c = 110* avec la clé privée
+
+*m = c^{47} mod 143*
+
+*=> m = 11 mod 143*
+
+Les message déchiffré est *m = 11*
