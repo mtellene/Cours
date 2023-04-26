@@ -8,7 +8,7 @@
 
 ### Chiffrement asymétrique
 
-- <u>**Principe**</u> : le cryptosystème met en jeu 2 clés, une pour le chiffrement (**Kp**) et une pour le déchiffrement (**Kpr**)
+- **Principe** : le cryptosystème met en jeu 2 clés, une pour le chiffrement (**Kp**) et une pour le déchiffrement (**Kpr**)
 - Chaque utilisateur possède une paire de clé (Kp, Kpr)
 - Kp est la clé publique. Elle peut être connue de tous et diffusée dans un annuaire
 - Kpr est la clé privée. Elle doit être gardée secrète et connue uniquement de son propriétaire
@@ -141,6 +141,11 @@ Donc *d = 5*. On a *Kp(5, 15)* et *Kpr(5, 15)*
 
 ---------------------------------------------------------------------
 
+Soient *p = 11* et *q = 13* et *e = 24*
+
+1. Calculer le module clé publique/privée.
+salut
+2. t
 
 
 
