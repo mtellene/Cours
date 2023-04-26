@@ -6,7 +6,7 @@ L'exemple décrit dans la suite donne des explications sur la POO
 
 ## Vocabulaire
 
-- Une classe : plan pour créer des objets. Une classe définit les données (**attributs**) et les fonctionnalités (**méthodes**) des objets. On peut accèder aux attributs et méthodes d'un objet avec un point.
+- Une classe : plan pour créer des objets. Une classe définit les données (**attributs**) et les fonctionnalités (**méthodes**) des objets. On peut accèder aux attributs et méthodes d'un objet avec un point (```.```).
 
 Exemple :
 ```python
