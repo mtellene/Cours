@@ -39,9 +39,9 @@ medor.aboyer()
 >>> "Waf"
 ```
 
-- Méthode : un sous-ensemble des fonctionnalités globales d'un objet. Une méthode est définit de la même manière qu'une fonction (mot-clé ```def```) dans la définition de la classe.
+- **Méthode** : un sous-ensemble des fonctionnalités globales d'un objet. Une méthode est définit de la même manière qu'une fonction (mot-clé ```def```) dans la définition de la classe.
 
-- Self : Le premier argument lorsque l'on définit n'importe quelle méthode est **toujours** l'argument ```self```. Cet argument spécifie l'instance sur laquelle on applique une méthode. ```self``` donne à l'interpréteur Python les informations sur l'instance à utiliser. Pour *définir* une méthode il faut utiliser ```self``` pour modifier les attributs de l'instance. Mais lors de *l'appel* d'une méthode, on ne doit pas écrire ```self```.
+- **```self```** : Le premier argument lorsque l'on définit n'importe quelle méthode est **toujours** l'argument ```self```. Cet argument spécifie l'instance sur laquelle on applique une méthode. ```self``` donne à l'interpréteur Python les informations sur l'instance à utiliser. Pour *définir* une méthode il faut utiliser ```self``` pour modifier les attributs de l'instance. Mais lors de *l'appel* d'une méthode, on ne doit pas écrire ```self```.
 
 ## Un exemple de création et d'utilisation de classe
 
