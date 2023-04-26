@@ -32,7 +32,91 @@
 Soient *p = 3* et *q = 5*, calculer les clés
 
 1. *n = p x q = 3 x 5 = 15*
-2. *&phi;(n)*
+2. *&phi;(n) = (p-1)(q-1) = 2 x 4 = 8*
+3. *e = 3*  #pour rappel *e* est générer de tel sorte qu'il est premier avec *&phi;(n)*
+4. Calcul de *d* :
+
+*e x d = 1 mod &phi;(n)*
+*=> 3 x d = 1 mod 8*
+*=> 3 x d = 1 + k x 8*
+
+Afin de calculer *d*, on applique l'algorithme d'Euclide étendue. Ici, nous allons le faire à la main (l'algorithme n'est pas expliqué, seulement les calculs sont donnés)
+
+*=> 8 = 3 x 2 + 2*
+*=> 3 = 2 x 1 + 1*
+*=> 1 = 3 - 2*
+*=> 1 = 3 - (8 - 3 x 2)*
+*=> 1 = 3 - 8 + 3 x 2*
+*=> 1 = 3 x 3 - 8*
+
+*=> 3 x 3 = 1 + 8*
+
+Donc *d = 3*. On a *Kp(3, 15)* et *Kpr(3, 15)*
+
+---------------------------------------------------------------------
+
+Soient *p = 11* et *q = 7*, calculer les clés
+
+1. *n = p x q = 11 x 7 = 77*
+2. *&phi;(n) = (p-1)(q-1) = 10 x 6 = 60*
+3. *e = 11*
+4. Calcul de *d* :
+
+*e x d = 1 mod &phi;(n)*
+*=> 11 x d = 1 mod 60*
+*=> 11 x d = 1 + k x 60*
+
+Afin de calculer *d*, on applique l'algorithme d'Euclide étendue.
+
+*=> 60 = 11 x 5 + 5*
+*=> 11 = 5 x 2 + 1*
+*=> 1 = 11 - 5 x 2*
+*=> 1 = 11 - (60 - 11 x 5) x 2*
+*=> 1 = 11 - 60 x 2 + 11 x 10*
+*=> 1 = 11 x 11 - 60 x 2*
+
+*=> 11 x 11 = 1 + 2 x 60*
+
+Donc *d = 11*. On a *Kp(11, 77)* et *Kpr(11, 77)*
+
+---------------------------------------------------------------------
+
+Soient *p = 3* et *q = 5* et *e = 5*, calculer les clés
+
+1. *n = p x q = 3 x 5 = 15*
+2. *&phi;(n) = (p-1)(q-1) = 2 x 4 = 8*
+3. Calcul de *d* :
+
+*e x d = 1 mod &phi;(n)*
+*=> 5 x d = 1 mod 8*
+*=> 5 x d = 1 + k x 8*
+
+Afin de calculer *d*, on applique l'algorithme d'Euclide étendue. Ici, nous allons le faire à la main (l'algorithme n'est pas expliqué, seulement les calculs sont donnés)
+
+*=> 8 = 5 x 1 + 3*
+*=> 5 = 3 x 1 + 2*
+*=> 3 = 2 x 1 + 1*
+*=> 1 = 3 - 2*
+*=> 1 = 3 - (5 - 3)*
+*=> 1 = 3 - 5 + 3*
+*=> 1 = 3 x 2 - 5*
+*=> 1 = (8 - 5) x 2 - 5*
+*=> 1 = 8 x 2 - 5 x 2 - 5*
+*=> 1 = 8 x 2 - 5 x 3*
+
+*=> (-5) x 3 = 1 - 2 x 8*
+Ici on a un problème car on a un *e* négatif, on ajoute donc *e x &phi;(n)* des deux côtés.
+
+*=> (-5) x 3 + 5 x 8 = 1 - 2 x 8 + 5 x 8*
+*=> 5 x 5 = 1 - 3 x 8*
+
+Donc *d = 5*. On a *Kp(5, 15)* et *Kpr(5, 15)*
+
+---------------------------------------------------------------------
+
+
+
+
 
 
 
