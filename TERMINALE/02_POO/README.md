@@ -1,6 +1,6 @@
 ## Dossier pour la programmation orientée objet
 
-# Explications sur la Programmation Orientée Objet (POO)
+## Explications sur la Programmation Orientée Objet (POO)
 
 L'exemple décrit dans la suite donne des explications sur la POO
 
