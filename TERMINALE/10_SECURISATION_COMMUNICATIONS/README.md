@@ -144,7 +144,9 @@ Donc *d = 5*. On a *Kp(5, 15)* et *Kpr(5, 15)*
 Soient *p = 11* et *q = 13* et *e = 24*
 
 1. Calculer le module clé publique/privée.
+
 salut
+
 2. t
 
 
