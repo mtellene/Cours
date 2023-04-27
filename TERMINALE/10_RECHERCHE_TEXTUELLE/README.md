@@ -1,1 +1,1 @@
-Dossier sur la recherche textuelle
+Dossier pour la recherche textuelle
