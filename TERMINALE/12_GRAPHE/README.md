@@ -56,7 +56,8 @@ Voici, à titre indicatif, le barème de notation :
 | ```chemin``` | 3 |
 | ```parcours_largeur_iteratif``` | 4 |
 | ```composant_connexe``` | 4 |
-| **Total** | 30 |
+| Respect des consignes de rendu (à venir) | 1 |
+| **Total** | 32 |
 
 
 ### Des méthodes supplémentaires
