@@ -41,6 +41,7 @@ Le fichier ```fichier_test.py``` est, comme son nom l’indique, un fichier de t
 Voici, à titre indicatif, le barème de notation :
 
 | Méthode | Points |
+| :---: | :---: |
 | ```__init__``` | 1 |
 | ```verification_integrite``` | 3 |
 | ```liste_sommets``` | 1 |
