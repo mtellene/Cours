@@ -32,7 +32,7 @@ Représenter la version non orienté du graphe précédent sous forme de diction
 
 Dans le TP, nous utilisons cette librairie afin de créer des représentations des graphes manipulés au format PNG. Pour installer la librairie, il suffit d'ouvrir un terminal et d'écrire :
 
-```code
+```
 pip3 install graphviz
 ```
 
