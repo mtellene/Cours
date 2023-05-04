@@ -1,6 +1,6 @@
 # Fichier de test de la classe Graphe
 # L & S Gonnord, 2016 - M Tellene, 2023
-from LibGraphe import *
+from LibGrapheEleve import *
 
 demo = False  # True pour tester la librairie
 
