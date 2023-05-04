@@ -27,6 +27,15 @@ Représenter la version non orienté du graphe précédent sous forme de diction
 
 ### Manipuler un graphe
 
+
+#### Comment installer la libraire ```graphviz```
+
+Dans le TP, nous utilisons cette librairie afin de créer des représentations des graphes manipulés au format PNG. Pour installer la librairie, il suffit d'ouvrir un terminal et d'écrire :
+
+```code
+pip3 install graphviz
+```
+
 **Organisation : aller dans votre dossier personnel, puis dans votre dossier « structure de données » (ou « SD »), dans ce dossier, créer un dossier « graphe », c’est ce dossier qui contiendra le travail fait lors de ce TP.** 
 
 **Durant ce TP, vous créerez une librairie contenant des méthodes applicables aux graphes. Cette librairie sera à rendre et sera notée. Vous pouvez vous aider mais un travail personnel est attendu**
