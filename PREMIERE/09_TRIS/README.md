@@ -99,7 +99,7 @@ Sur une liste ```L``` de *n* éléments (numérotés de 0 à *n-1*), le principe
 
 Exemple du tri sélection :
 
-![Exemple tri sélection](https://github.com/mtellene/NSI/tree/main/PREMIERE/09_TRIS/asset/ex_tri_selection.png)
+![Exemple tri sélection](https://github.com/mtellene/NSI/blob/main/PREMIERE/09_TRIS/asset/ex_tri_selection.png)
 
 
 Pour vous aider, il vous est conseillé d'écrire une fonction ```minimum()``` qui prend en argument un tableau et un indice ```x```. La fonction renvoie l'indice de l'élément de valeur minimale du tableau à partir de l'indice ```x```.
