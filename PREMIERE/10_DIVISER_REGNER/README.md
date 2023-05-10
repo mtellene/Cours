@@ -56,7 +56,7 @@ Par exemple si l'on veut tester qu'une variable ```x``` est égale à 2 grâce �
 assert x == 2, "La variable x n'est pas égale à 2"
 ```
 
-Si ```x``` est égal à 2, rien se passera, sinon le message ```python "La variable x n'est pas égale à 2"``` s'affichera en plus d'une erreur ```AssertionError```.
+Si ```x``` est égal à 2, rien se passera, sinon le message ```"La variable x n'est pas égale à 2"``` s'affichera en plus d'une erreur ```AssertionError```.
 
 6. Modifier le programme et remplacer les ```print()``` effectués à l'étape 4 par des assertions. Normalement, aucune ```AssertionError``` ne devrait être relevée lorsque vous lancez le code
 
