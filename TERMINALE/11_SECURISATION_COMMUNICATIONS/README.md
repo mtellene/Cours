@@ -212,3 +212,11 @@ Les message chiffré est *c = 69*
 *=> m = 11 mod 143*
 
 Les message déchiffré est *m = 11*
+
+---------------------------------------------------------------------
+
+### Échange des clés
+
+L'échange des clés (en simplifié) est décrit comme suit :
+
+![handshake](https://github.com/mtellene/NSI/blob/main/TERMINALE/11_SECURISATION_COMMUNICATIONS/asset/handshake.png)
