@@ -134,7 +134,7 @@ En vous servant de ```minimum``` et possiblement de ```permutation```, écrire u
 
 Le but de cette partie est de comparer les deux méthodes via un graphique. Ajouter le contenu du fichier ```performances.py```. Compléter les "..." afin de rendre le code fonctionnel. Le résultat devrait être (approximativement) le graphique ci-dessous.
 
-![Rendu graphique](https://github.com/mtellene/NSI/tree/main/PREMIERE/09_TRIS/asset/performances.png)
+![Rendu graphique](https://github.com/mtellene/NSI/blob/main/PREMIERE/09_TRIS/asset/performances.png)
     
 
 Dans un second temps, nous allons afficher seulement les courbes des deux méthodes l'une après l'autre. Commencer par afficher les trois courbes du tri insertion, puis les trois courbes du tri sélection.
