@@ -9,6 +9,8 @@
 
 #### Exercice 1
 
+![graphe TP](https://github.com/mtellene/NSI/blob/main/TERMINALE/12_GRAPHE/graph_TP.png)
+
 Sur feuille, représenter le graphe donné dans le fichier ```graph_TP.png``` sous forme de dictionnaire d’adjacence.
 
 
