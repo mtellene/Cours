@@ -11,7 +11,7 @@
 
 Sur feuille, représenter le graphe donné ci-dessous sous forme de dictionnaire d’adjacence.
 
-![graphe TP](https://github.com/mtellene/NSI/blob/main/TERMINALE/12_GRAPHE/graph_TP.png)
+![graphe TP](https://github.com/mtellene/NSI/blob/main/TERMINALE/12_GRAPHE/asset/graph_TP.png)
 
 
 #### Exercice 2
