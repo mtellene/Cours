@@ -6,7 +6,7 @@
 
 Vérifier à la main que nos fonctions sont correctes est impossible, il faudrait tester tous les cas possibles et cela serait bien trop long.
 
-D'une manière générale, il n'est pas possinle de vérifier à l'aide de tests que nos fonctions sont correctes. Les tests nous permettent d'avoir un certain degré de confiance dans nos fonctions.
+D'une manière générale, il n'est pas possible de vérifier à l'aide de tests que nos fonctions sont correctes. Les tests nous permettent d'avoir un certain degré de confiance dans celles-ci.
 
 Dans cette partie, nous allons essayer d'augmenter le degré de confiance en nos fonctions.
 
@@ -16,7 +16,7 @@ Dans cette partie, nous allons essayer d'augmenter le degré de confiance en nos
 
 1. Ouvrez le fichier ```rech_tableau_trie.py```
 
-2. Supprimer les fonction ```test_not_in_liste(f,L)``` et ```test_in_liste(f,L)```
+2. Supprimer les fonctions ```test_not_in_liste(f,L)``` et ```test_in_liste(f,L)```
 
 3. Une première façon de tester notre fonction serait de faire la chose suivante :
 
@@ -38,7 +38,7 @@ False
 
 4. Recopier les 4 lignes de tests sous votre fonction ```recherche_dicho(L, N)``` et vérifier que le résultat obtenu est le même que celui qui est attendu
 
-5. Bien que cette méthode soit utile pour vérifier nos résultats, celle-ci n'est pas très efficace. En effet, imaginez que l'on fasse une centaine de tests comme ceci et que l'on doit vérifier que l'on ait le bon résultat en regardant l'affichage ligne par ligne. Il nous faut donc un moyen automatique permettant de nous informer quand le résultat **n'est pas celui attendu**. De cette manière, il sera bien plus simple d'identifier les cas posants des problèmes.
+5. Bien que cette méthode soit utile pour vérifier nos résultats, celle-ci n'est pas très efficace. En effet, imaginez que l'on fasse une centaine de tests comme ceci et que l'on doit vérifier que l'on ait le bon résultat en regardant l'affichage ligne par ligne. Il nous faut donc un moyen automatique permettant de nous informer quand le résultat **n'est pas celui attendu**. De cette manière, il sera bien plus simple d'identifier les cas qui nous posent des problèmes.
 
 Pour ce faire, nous allons utiliser **une assertion**. Une assertion est une expression qui doit être évaluée comme vraie. Si cette évaluation échoue elle peut mettre fin à l'exécution du programme, ou bien lancer une exception.
 
@@ -56,6 +56,8 @@ Par exemple si l'on veut tester qu'une variable ```x``` est égale à 2 grâce �
 assert x == 2, "La variable x n'est pas égale à 2"
 ```
 
+Si ```x``` est égal à 2, rien se passera, sinon le message ```python "La variable x n'est pas égale à 2"``` s'affichera en plus d'une erreur ```AssertionError```.
+
 6. Modifier le programme et remplacer les ```print()``` effectués à l'étape 4 par des assertions. Normalement, aucune ```AssertionError``` ne devrait être relevée lorsque vous lancez le code
 
 7. Maintenant, nous allons provoquer une erreur. Recopier la ligne suivante :
@@ -64,7 +66,7 @@ assert x == 2, "La variable x n'est pas égale à 2"
 assert recherche_dicho([1,2,3],0) == True, "Erreur attendue"
 ```
 
-Ici, nous provoquons une erreur intentionnelle car nous ne mettons pas le bon résultat. Lancer le code, vous devriez avoir une erreur comme ceci :
+Ici, nous provoquons **intentionnellement** une erreur car nous ne mettons pas le bon résultat. Lancer le code, vous devriez avoir une erreur comme ceci :
 
 ```python
 Traceback (most recent call last):
