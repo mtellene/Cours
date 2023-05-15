@@ -102,7 +102,7 @@ Afin de simplifier la compréhension et l’écriture d’un tel algorithme, vou
 
 ### IV - Rendu
 
-Le rendu se passe ici : [a link](https://mega.nz/filerequest/a03m04qlOcU)
+Le rendu se passe ici : [dépôt](https://mega.nz/filerequest/a03m04qlOcU)
 
 Vous avez jusqu'au **dimanche 21/05 - 23h59** pour rendre votre travail.
 
