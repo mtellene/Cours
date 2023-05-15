@@ -1,10 +1,24 @@
 ## Dossier pour les graphes
 
+## TD/TP Structure de données - Graphes
+
+### I - Appréhender la structure de données graphe
+#### Exercice 1
+#### Exercice 2
+#### Exercice 3
+
+### II - Manipuler un graphe
+#### 1. Comment installer la libraire ```graphviz```
+#### 2. Implémenter la classe ```Graphe```
+
+### III - Pour aller plus loin
+
+
 ----------------------------------
 
 ## TD/TP Structure de données - Graphes
 
-### Appréhender la structure de données graphe
+### I - Appréhender la structure de données graphe
 
 
 #### Exercice 1
@@ -27,16 +41,19 @@ Représenter la version non orienté du graphe précédent sous forme de diction
 
 
 
-### Manipuler un graphe
+### II - Manipuler un graphe
 
 
-#### Comment installer la libraire ```graphviz```
+#### 1. Comment installer la libraire ```graphviz```
 
 Dans le TP, nous utilisons cette librairie afin de créer des représentations des graphes manipulés au format PNG. Pour installer la librairie, il suffit d'ouvrir un terminal et d'écrire :
 
 ```
 pip3 install graphviz
 ```
+
+#### 2. Implémenter la classe ```Graphe```
+
 
 **Organisation : aller dans votre dossier personnel, puis dans votre dossier « structure de données » (ou « SD »), dans ce dossier, créer un dossier « graphe », c’est ce dossier qui contiendra le travail fait lors de ce TP.** 
 
@@ -71,7 +88,7 @@ Voici, à titre indicatif, le barème de notation :
 | **Total** | 32 |
 
 
-### Des méthodes supplémentaires
+### III - Pour aller plus loin
 
 Voici deux méthodes pour aller plus loin avec cette classe ```Graphe```. Il n’est pas obligatoire de les implémenter, mais le faire peut vous donner un bonus de points.
 
@@ -81,3 +98,18 @@ Voici deux méthodes pour aller plus loin avec cette classe ```Graphe```. Il n�
 
 
 Afin de simplifier la compréhension et l’écriture d’un tel algorithme, vous baserez votre code sur **la proposition de Kempe**. Des explications sur le problème de coloration de graphe et un exemple de l’algorithme sont donnés. La méthode devra renvoyer un dictionnaire dans lequel la clé sera un sommet et la valeur sera la couleur associée. La couleur sera symboliser par un nombre.
+
+
+### IV - Rendu
+
+Le rendu se passe ici : [a link]((https://mega.nz/filerequest/a03m04qlOcU))
+
+Vous avez jusqu'au **dimanche 21/05 - 23h59** pour rendre votre travail.
+
+**Un dépôt ou une modification de votre travail après cette heure ne sera pas prise en compte et vaudra 0.**
+
+**Format du rendu**
+
+- Le fichier doit être un archive ```.rar``` ou ```.zip```
+- Le nom de votre fichier doit être de la forme : ```nom_prenom_LibGraphe.rar``` ou ```nom_prenom_LibGraphe.zip```
+
