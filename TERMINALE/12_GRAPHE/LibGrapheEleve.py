@@ -29,9 +29,6 @@ class Graphe:
             Si pas de dictionnaire ou None donné,
             un dictionnaire vide sera utilisé.
 
-            Le constructeur vérifie l'intégrité du graphe : s1->s2 ; s2->s1 (cf. graphe non orienté)
-            Vous devrez compléter la structure try ... except
-
             :param graph_dict: dictionnaire d'adjacence du graphe
         """
         pass
