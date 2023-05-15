@@ -84,7 +84,7 @@ Voici, à titre indicatif, le barème de notation :
 | ```chemin``` | 3 |
 | ```parcours_largeur_iteratif``` | 4 |
 | ```composant_connexe``` | 4 |
-| Respect des consignes de rendu (à venir) | 1 |
+| Respect des consignes de rendu (voir IV) | 1 |
 | **Total** | 32 |
 
 
