@@ -37,7 +37,7 @@ class Graphe:
     
     def verification_integrite(self):
         """
-            Vérification de l'intégrité du graphe : si s1->s2 alors s1->e2
+            Vérification de l'intégrité du graphe : si s1->s2 alors s2->s1
             :return: True si le graphe est intègre, False sinon
         """
         pass
