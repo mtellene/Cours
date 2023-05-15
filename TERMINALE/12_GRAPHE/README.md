@@ -110,6 +110,6 @@ Vous avez jusqu'au **dimanche 21/05 - 23h59** pour rendre votre travail.
 
 **Format du rendu**
 
-- Le fichier doit être un archive ```.rar``` ou ```.zip```
+- Le fichier est bien évidemment votre fichier python. Celui-ci doit être contenu dans une archive ```.rar``` ou ```.zip```
 - Le nom de votre fichier doit être de la forme : ```nom_prenom_LibGraphe.rar``` ou ```nom_prenom_LibGraphe.zip```
 
