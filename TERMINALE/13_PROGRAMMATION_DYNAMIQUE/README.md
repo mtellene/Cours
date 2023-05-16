@@ -17,7 +17,6 @@
 ### IV - Voyageur de commerce
 #### 1. Algorithme récursif
 #### 2. Programmation dynamique
-#### 3. Comparaison des méthodes
 
 ----------------------------------
 
