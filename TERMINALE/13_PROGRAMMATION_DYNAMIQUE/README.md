@@ -141,7 +141,7 @@ On remarque que sur certaines instances, le rendu de monnaie version gloutonne n
 
 Pour rappel, la programmation dynamique consiste à se souvenir des calculs intermédiaires afin de calculer une solution finale.
 
-Écrire une fonction ```rendu_monnaie_pg(liste_pieces, montant)``` qui calcule le nombre optimal de pièces à rendre, mais aussi le détail du rendu, pour le montant ```montant``` avec les pièces de ```liste_pieces```. Cette fonction devra suivre le principe de la programmation dynamique.
+Écrire une fonction ```rendu_monnaie_pg(liste_pieces, montant)``` qui renvoie le nombre optimal de pièces à rendre, mais aussi le détail du rendu, pour le montant ```montant``` avec les pièces de ```liste_pieces```. Cette fonction devra suivre le principe de la programmation dynamique.
 
 Une fois fait, tester votre fonction sur les appels réalisés sur l'algorithme glouton. 
 
