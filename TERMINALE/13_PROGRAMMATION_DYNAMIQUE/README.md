@@ -14,8 +14,8 @@
 #### 2. Programmation dynamique
 #### 3. Comparaison des méthodes
 
-### IV - Voyageur de commerce
-#### 1. Algorithme récursif
+### IV - Sac à dos
+#### 1. Algorithme glouton
 #### 2. Programmation dynamique
 
 ----------------------------------
@@ -145,125 +145,14 @@ Pour rappel, la programmation dynamique consiste à se souvenir des calculs inte
 
 Une fois fait, tester votre fonction sur les appels réalisés sur l'algorithme glouton. 
 
-### IV - Voyageur de commerce
+### IV - Sac à dos
 
-Créer un fichier **voyageur_commerce.py**. C'est dans ce fichier que sera à faire le travail de cette partie.
-
-Le problème du voyageur de commerce, ou problème du commis voyageur, est un problème d'optimisation qui consiste à déterminer, étant donné une liste de villes et les distances entre toutes les paires de villes, le circuit le plus court qui passe par chaque ville une et une seule fois.
-
-Ce problème est un problème d'optimisation car :
-
-- il existe beaucoup de solutions possibles : pour 4 villes, on aura $4! (4 \times 3 \times 2 \times 1$) chemins possibles
-    
-- on fait la somme des distances entre les villes du circuit pour connaître le coût total du circuit
-    
-- on recherche une solution qui soit bonne, voire la meilleure
+Créer un fichier **sac_a_dos.py**. C'est dans ce fichier que sera à faire le travail de cette partie.
 
 
 
 #### 1. Algorithme glouton
 
-Une agence de voyage proposant des tours entre différentes villes vous demande de créer un algorithme capable de calculer le circuit le plus court entre les villes. En effet, pour rester attractif, l'agence se doit de proposer les meilleurs prix possibles et donc elle doit économiser sur les prix de transport.
-
-Pour cela, on considère le tableau des distances énoncé précédemment.
-
-##### Règle de choix
-
-1. on commence par se rendre à la ville la plus proche en termes de distance de la ville actuelle
-    
-2. on actualise la liste des villes visitées et le distance parcourue. Le nombre de villes à parcourir est plus petit qu'avant : le problème a été simplifié
-    
-3. on recommence le 1. jusqu'à avoir visité toutes les villes ; \textbf{attention, il ne faut pas repasser par une déjà visitée !}
-    
-4. une fois toutes les villes visitées, on revient à notre ville de départ
-    
-5. on renvoie la liste des villes visitées et la distance parcourue
-
-
-Écrire une fonction ```voyager_ag(villes, distances, indice_depart)``` qui prend :
-
-- une liste ```villes``` contenant les villes à visiter
-
-- une liste de listes ```distances``` qui contient les distances entre les paires de villes
-
-- un indice de ville de départ ```indice_depart```. Cette indice correspond à un indice de ville dans ```villes```
-
-
-Cette fonction devra suivre le principe des algorithmes gloutons.
-
-Une fois la fonction écrite, faire les différents appels pour répondre aux questions
-
-1.
-```python
-villes = ["Marseille", "Strasbourg", "Toulouse", "Brest"]
-
-distances = [
-    [float('inf'), 500, 275, 650],
-    [500, float('inf'), 700, 400],
-    [275, 700, float('inf'), 500],
-    [650, 400, 500, float('inf')]
-]
-```
-- Quel est le circuit obtenu ?        
-- Quel est le coût de ce circuit ?
-- Le circuit est-il optimal ?
-    
-
-2.
-```python
-villes = ["Lyon", "Orléans", "Lilles"]}
-        
-distances = [
-    [float('inf'), 450, 680],
-    [450, float('inf'), 350],
-    [680, 350, float('inf')]
-]
-```
-- Quel est le circuit obtenu ?
-- Quel est le coût de ce circuit ?
-- Le circuit est-il optimal ?
-
-
-3.
-```python
-villes = ["Paris", "Berlin", "Lisbonne", "Madrid", "Rome", "Londres", "Athènes"]
-        
-distances = [
-    [float('inf'), 1050, 1730, 1275, 1420, 470, 2880],
-    [1050, float('inf'), 2780, 2320, 1500, 1100, 2330],
-    [1730, 2780, float('inf'), 625, 2500, 2190, 3800],
-    [1275, 2320, 625, float('inf'), 1960, 1730, 3250],
-    [1420, 1500, 2500, 1960, float('inf'), 1860, 1270],
-    [470, 1100, 2190, 1730, 1860, float('inf'), 1980],
-    [2880, 2330, 3800, 3250, 1270, 1980, float('inf')]
-]
-```
-- Quel est le circuit obtenu ?
-- Quel est le coût de ce circuit ?
-- Le circuit est-il optimal ?
-
-
-4.
-```python
-villes = ["Paris", "New York", "Tokyo", "Johannesburg"]
-        
-distances = [
-    [float('inf'), 5835, 14831, 12416],
-    [5835, float('inf'), 10845, 12832],
-    [14831, 10845, float('inf'), 13537],
-    [12416, 12832, 13537, float('inf')]
-]
-```
-
-- Quel est le circuit obtenu ?
-- Quel est le coût de ce circuit ?
-- Le circuit est-il optimal ?
-
-
 #### 2. Programmation dynamique
-
-Écrire une fonction ```voyageur_pg()``` suivant le principe de la programmation dynamique, permettant de résoudre le problème du voyageur de commerce. À vous de trouver les arguments à donner à la fonction.
-
-Une fois fait, tester votre fonction sur les instances précédentes.
 
 
