@@ -5,7 +5,7 @@
 ### I - Organisation
 
 ### II - Suite de Fibonacci
-#### 1. Algorithme récursif
+    #### 1. Algorithme récursif
 #### 2. Programmation dynamique
 #### 3. Comparaison des méthodes
 
