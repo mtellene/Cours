@@ -96,7 +96,7 @@ def main():
         graph.ajouter_arete(("a", "z"))
         print("Ajout de l'arête {'a', 'a'}")
         graph.ajouter_arete(("a", "a"))
-        print(f"Arêtes du graphe, devrait être [{'d', 'a'}, {'b', 'c'}, {'d', 'c'}, {'c', 'e'}] : {graph.liste_aretes()}")
+        print(f"Arêtes du graphe, devrait être [{'d', 'a'}, {'a', 'z'}, {'b', 'c'}, {'d', 'c'}, {'c', 'e'}] : {graph.liste_aretes()}")
 
         print()
 
