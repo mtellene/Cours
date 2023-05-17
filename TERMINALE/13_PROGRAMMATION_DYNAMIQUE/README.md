@@ -122,7 +122,7 @@ Créer un fichier **rendu_monnaie.py**. C'est dans ce fichier que sera à faire 
 
 #### 1. Algorithme glouton
 
-Écrire une fonction ```rendu_monnaie_ag(liste_pieces, montant)``` qui calcule le nombre optimal de pièces à rendre, mais aussi le détail du rendu, pour le montant ```montant``` avec les pièces de ```liste_pieces```.
+Écrire une fonction ```rendu_monnaie_ag(liste_pieces, montant)``` qui renvoie le nombre optimal de pièces à rendre, mais aussi le détail du rendu, pour le montant ```montant``` avec les pièces de ```liste_pieces```.
 
 Tester votre fonction sur les appels suivants :
 
