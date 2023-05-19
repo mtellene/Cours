@@ -24,7 +24,7 @@ On dit que le langage HTML est une langage de balisage car il est composé de **
 
 La structure d'une page web est la suivante :
 
-![structure page web](https://github.com/mtellene/NSI/tree/main/PREMIERE/12_WEB/TP1/asset/structure_page_html.png)
+![structure page web](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP1/asset/structure_page_html.png)
 
 - ```<! DOCTYPE html>``` sert à indiquer au navigateur que le document est un document HTML
 
@@ -116,7 +116,7 @@ Ce site est votre premier site web et il sera consacré à l'histoire du Web. Vo
 
 Sauvegardez votre page et rafraîchissez-la. Votre page devrez ressembler à ceci :
 
-![vérification page](https://github.com/mtellene/NSI/tree/main/PREMIERE/12_WEB/TP1/asset/check_page_titre.png)
+![vérification page](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP1/asset/check_page_titre_p.png)
 
 Vous avez toutes les clés en main pour créer une page web
 
@@ -126,7 +126,7 @@ Dans le dossier **ressources**, vous trouverez un fichier **paragraphes.txt** co
 
 Le but sera de reproduire la page suivante :
 
-![vérification page](https://github.com/mtellene/NSI/tree/main/PREMIERE/12_WEB/TP1/asset/resultat_final.png)
+![vérification page](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP1/asset/resultat_final.png)
 
 L'image à mettre sur votre page se trouve dans le dossier **ressources**. Un exemple de mise en place d'image est donné [ici](https://github.com/mtellene/NSI/tree/main/PREMIERE/12_WEB/ressources/image.html)
 
