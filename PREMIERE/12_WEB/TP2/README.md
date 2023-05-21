@@ -6,6 +6,8 @@
 
 ## III - Poser les bases
 
+## IV - Un peu de mise en forme
+
 ---
 
 **NS'EAT** est un restaurant basé à Avignon.
@@ -59,24 +61,67 @@ Pour réaliser cette étape, il va falloir :
 2. récupérer cet ```id``` dans **styles.css** en utilisant un #
 3. appliquer les filtres demandés
 
+À ce stade, vous devriez avoir une page comme ceci
+
+![Vérfication 1](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP2/assets/verif_1.png)
+
+La page commence à prendre mais l'affichage du header n'est pas incroyable, changeons ça.
 
 
-## Niveau 2. Menu
+## IV - Un peu de mise en forme
 
-- Utiliser les flexbox pour ajuster les boutons sous la forme d’une ligne
+Dans cette partie, nous allons mettre en forme le header afin d'avoir un affichage plus propre.
 
-- Ajouter une image derrière chaque bouton
-    
+1. Appliquer les styles suivants à la balise header :
+
+    - appliquer à l'attribut ```display``` la valeur ```flex```. Ce style a pour effet de créer une *flexbox* (raccourci pour CSS Flexible Box Layout Module), un standard CSS3 de disposition des éléments dans une page web
+
+    - après avoir écrit cette ligne, l'affichage est encore pire... nous allons alors appliqué à l'attribut ```flex-direction``` la valeur ```column```, à l'attribut ```justify-content``` la valeur ```center``` et à l'attribut ```align-items``` la valeur ```center```
+
+    - maintenant l'affichage est bien mieux ! Stylisons encore notre page. Ajouter à l'espace de titre le style suivant :
+
+```css
+box-shadow : -13px 13px 2px 1px rgba(0, 0, 0, .2)
+```
+
+Maintenant, nous avons un super affichage pour notre page ! Mais notre menu de navigation laisse encore à désirer... Occupons-nous de ça.
+
+1. Appliquer une flexbox à la liste non ordonnée et rajouter un attribut ```flex-direction``` ayant la valeur ```row```
+
+2. Ajouter à chaque élément les styles suivants :
+
+    - enlever les puces de liste avec l'attribut ```list-style-type``` à ```none```
+
+    - appliquer un ```padding``` de 75px
+
+    - passer la taille de la police à 20px
+
+    - changer la police d'écriture pour mettre *Kenia, cursive* (la même police que l'espace de titre)
+
+3. Ajouter une image derrière chaque élément du menu
+
     - Pizza > pizza-banner.jpg
     - Salade > salade-banner.jpg
     - Burger > burger-banner.jpg
     - Boisson > boisson-banner.jpg
 
-- Mettre en blanc la couleur du texte de chaque bouton
+4. Mettre en blanc la couleur du texte de chaque élément
 
-**L'aperçu attendu est donné par la capture d'écran *apercu_menu.jpg***
+À ce stade, l'affichage est pas mal mais non allons encore l'améliorer :
 
-- Faire une animation de scroll vers la bonne section lors d’un clique (sans ```javascript```)
+5. Rajouter les styles suivants pour chaque éléments du menu :
+
+    - mettre l'attribut ```cursor``` avec la valeur ```pointer```
+
+    - mettre l'attribut ```background-size``` avec la valeur ```cover```
+
+    - mettre l'attribut ```background-repeat``` avec la valeur ```no-repeat```
+
+
+À ce stade, vous devriez avoir une page comme ceci
+
+![Vérfication 1](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP2/assets/verif_2.png)
+
 
 ## Niveau 3. Sections
 
