@@ -48,7 +48,7 @@ Le but est de relier toutes les villes entre elles afin de construire un circuit
 
 ---
 
-### Exercice
+### Exercice :pencil:
 
 Un circuit est donné, sur une feuille écrire tous les autres circuits possibles, avec le coût associé, ayant pour ville de départ Marseille :
 
