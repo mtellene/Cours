@@ -10,6 +10,10 @@
 
 ## V - Ajout de contenu
 
+## VI - À votre tour
+
+## VI - Pour aller plus loin
+
 ---
 
 **NS'EAT** est un restaurant basé à Avignon.
@@ -171,41 +175,34 @@ L'affichage de ce que nous venons de faire n'est pas très bien, modifions ça !
 
 6. Appliquer à la classe ```prix``` une largeur de caractères (```font-weight```) à gras (```bold```) ainsi qu'une taille de caractères à 22px
 
-7. Appliquer au niveau de titre **des classes ```produit```** une transformation de texte (```text-transform```) en mettant les lettres en majuscules (```uppercase```)
+7. Appliquer au niveau de titre **des classes ```produit```** une transformation de texte (```text-transform```) en mettant les lettres en majuscules (- Ajouter des liens hypertextes : quand on clique)
 
 Les changements faits devraient mener à ce résultat :
 
 ![Vérfication 3](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP2/assets/verif_3.png)
 
 
+## VI - À votre tour
 
-- Créer un premier produit contenant :
-    - Le titre *Caprapiquante*
-    - Une description *Chevre, Miel, Graines toastés, piment rouge*
-    - Un prix *12€00*
-    - L’image *pizza1.jpg*
+Vous avez toutes les clés en main, à vous de recréer la page suivante :
 
-- Créer un second produit contenant :
-    - Le titre *Strategia*
-    - Une description *Tomates, Mozarella, Basilique*
-    - Un prix *9€00*
-    - L’image *pizza2.jpg*
+![Résultat final1](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP2/assets/res1.png)
 
-- Créer un troisieme produit contenant :
-    - Le titre *Naturale*
-    - Une description *Chèvre, courgettes, basilique, carottes, huile végetale*
-    - Un prix *10€00*
-    - L’image *pizza3.jpg*
+![Résultat final2](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP2/assets/res2.png)
 
-- Mettre en forme chaque produit pour avoir le résultat suivant :
+![Résultat final3](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP2/assets/res3.png)
 
-**L'aperçu attendu est donné par la capture d'écran *apercçu_section.jpg***
+En plus de l'aspect visuel, vous rajouter des liens hypertextes sur les éléments du menu. Ces liens devront ramener vers la section associée. Il faudra aussi changer du style :
+
+- au lieu de mettre ```color : white``` pour les éléments du menu, vous mettrez la couleur pour la balise ```<a>```
+
+- toujours pour cette balise, mettre l'attribut ```text-decoration``` avec la valeur ```none```
+
+- faire une animation douce de scroll vers la bonne section lors d'un clic (javascript interdit)
 
 
-- Reproduire la même chose pour les sections salade, burger et boissons
-
-## Niveau 4. Bonus
+## VII - Pour aller plus loin
 
 - Ajouter un pied de page contenant
     - La mention Copyright sous la forme d’un paragraphe
-    - Une iframe affichant la position sur google maps de la structure https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d22981.61919597009!2d4.7977169268332664!3d43.94483236286202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurant%20avignon!5e0!3m2!1sfr!2sfr!4v1678530888013!5m2!1sfr!2sfr (pas de correction)
+    - Une iframe affichant la position sur google maps de la structure https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d22981.61919597009!2d4.7977169268332664!3d43.94483236286202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurant%20avignon!5e0!3m2!1sfr!2sfr!4v1678530888013!5m2!1sfr!2sfr
