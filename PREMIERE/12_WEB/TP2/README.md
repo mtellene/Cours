@@ -8,6 +8,8 @@
 
 ## IV - Un peu de mise en forme
 
+## V - Ajout de contenu
+
 ---
 
 **NS'EAT** est un restaurant basé à Avignon.
@@ -120,12 +122,62 @@ Maintenant, nous avons un super affichage pour notre page ! Mais notre menu de n
 
 À ce stade, vous devriez avoir une page comme ceci
 
-![Vérfication 1](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP2/assets/verif_2.png)
+![Vérfication 2](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP2/assets/verif_2.png)
 
 
-## Niveau 3. Sections
+## V - Ajout de contenu
 
-- Créer une section *pizza*, contenant l’arrière plan *pizza-banner.jpg*
+Notre page est bien stylisée, mais manque de contenu... Ajoutons-en !
+
+1. Placez-vous en dehors du header mais dans le corps de la page web
+
+2. Créer une section pour les pizzas. Pour créer une section, il vous suffit d'utiliser la balise ```<section>...</section>```
+
+3. Dans cette section, créer deux divisions (une pour chaque pizza que nous allons mettre). Les deux divisions devront avoir la classe ```produit```
+
+4. Pour la première division :
+
+    1. rajouter l'image *pizza1.jpg* avec la classe ```image```
+    2. sous l'image, rajouter une division avec la classe ```text_produit```
+    3. dans la division, mettre les informations suivantes :
+        
+        - le titre en niveau 3 : *La PyZa*
+        - un paragraphe : *chèvre, miel, piment rouge*
+        - un paragraphe avec la classe ```prix``` : *12€00*
+
+L'affichage de ce que nous venons de faire n'est pas très bien, modifions ça !
+
+1. Réduisons la taille de l'image, pour ce faire dans **styles.css**, appliquer à la classe ```image``` l'attribut ```width``` avec la valeur 35%
+
+2. Appliquer à la classe ```produit``` les styles suivants :
+
+    - créer une flexbox
+    - mettre du blanc comme couleur de fond
+    - appliquer une marge de 20px
+    - appliquer une largeur de 70%
+
+3. Appliquer à **cette section uniquement** l'image de fond *pizza-banner.jpg*
+
+4. Appliquer à la balise ```section``` les styles suivants :
+
+    - ne pas répéter l'image de fond
+    - fixer la taille de l'image de fond à ```cover```
+    - mettre un ```padding``` de 20px
+    - ajouter une flexbox
+    - fixer la direction de la flexbox à ```column```
+    - fixer l'attribut ```align-items``` avec la valeur ```center```
+
+5. Appliquer à la classe ```text_produit``` un ```padding``` de 20 px et une ```line-height``` de 40px
+
+6. Appliquer à la classe ```prix``` une largeur de caractères (```font-weight```) à gras (```bold```) ainsi qu'une taille de caractères à 22px
+
+7. Appliquer au niveau de titre **des classes ```produit```** une transformation de texte (```text-transform```) en mettant les lettres en majuscules (```uppercase```)
+
+Les changements faits devraient mener à ce résultat :
+
+![Vérfication 3](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP2/assets/verif_3.png)
+
+
 
 - Créer un premier produit contenant :
     - Le titre *Caprapiquante*
