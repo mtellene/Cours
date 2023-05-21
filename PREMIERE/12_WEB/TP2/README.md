@@ -186,11 +186,11 @@ Les changements faits devraient mener à ce résultat :
 
 Vous avez toutes les clés en main, à vous de recréer la page suivante :
 
-![Résultat final1](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP2/assets/res1.png)
+![Résultat final1](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP2/assets/res1.jpg)
 
-![Résultat final2](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP2/assets/res2.png)
+![Résultat final2](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP2/assets/res2.jpg)
 
-![Résultat final3](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP2/assets/res3.png)
+![Résultat final3](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP2/assets/res3.jpg)
 
 En plus de l'aspect visuel, vous rajouter des liens hypertextes sur les éléments du menu. Ces liens devront ramener vers la section associée. Il faudra aussi changer du style :
 
