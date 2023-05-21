@@ -1,37 +1,64 @@
-# Sujet
+# TP2 - Création d'une page web (HTML et CSS)
 
-## Contexte
+## I - Contexte
+
+## II - Création de l'environnement de travail
+
+## III - Poser les bases
+
+---
 
 **NS'EAT** est un restaurant basé à Avignon.
 
-Il propose des petits plats à emporter (<span style:'color:green;'>salades, pizzas, burger, boissons</span>).
+Il propose des petits plats à emporter.
+
+Vous allez coder la page web du restaurant. Sur cette page, il sera possible de voir les differentes formules et boissons.
 
 
-Suite à cette longue période de confinement réduisant la clientèle, le restaurant décide de vous contacter pour réaliser un site sur lequel il sera possible de voir les differentes formules, boissons.
+## II - Création de l'environnement de travail
 
+Avant de commencer le TP, vous allez créer votre environnement de travail. Pour ce faire vous allez dans votre dossier personnel, puis dans le dossier "web". Une fois arrivé, créer un dossier "TP2". C'est dans ce dossier que vous sauvegarderez les exercices de ce TP.
 
-## Préparatif
 Les ressources nécessaires sont dans le dossier ```ressources/```
 
 Vous n’avez pas le droit d’utiliser de framework.
 
 
-## Niveau 1. Base
+## III - Poser les bases
 
-- Ajouter le titre **NS'EAT** sous la forme d’une balise h1
+1. Commencer pour créer un fichier "index.html" et créer la structure de base d'une page web (```<!DOCTYPE html>```, ```<html>```, ```<head>```, ```<body>```). Vous pouvez aller chercher un template de page web vierge [ici](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/ressources/structure_base.html)
 
-- Ajouter le slogan *Des petits plats tout en douceur* sous la forme paragraphe
+2. Dans le body, créer un header. Pour ce faire utiliser la balise ```<header>...</header>```
 
-- Ajouter un menu de navigation contenant 4 boutons Pizza, Salade, Burger, Boisson
+3. Dans le header, nous allons commencer pour créer l'espace de titre :
 
-- Créer un fichier **styles.css** dans un dossier
+    1. Créer une division avec la balise ```<div>...</div>```
+    2. Dans cette division, ajouter le titre **NS'EAT** sous la forme d’une balise h1
+    3. Ajouter le slogan *Des petits plats pour les grands programmeurs* en italique
 
-- Mettre le fond de la page en bleu (code couleur #1695DA)
+4. Une fois l'espace de titre réalisé, ajouter un menu de navigation contenant 4 éléments Pizza, Salade, Burger, Boisson. Pour créer ce menu, il va falloir utiliser la balise ```<nav>...</nav>``` et dans cette balise, créer une liste non ordonnée. **Attention le menu est dans le header mais pas dans la division créée précédemment**.
 
-- Centrer le titre et le mettre un carré blanc
+5. Créer un fichier **styles.css** dans un dossier
 
-- Changer la police d’écriture en *Kenia*
-https://fonts.google.com/specimen/Kenia
+6. Mettre le fond de la page en bleu (code couleur #1695DA)
+
+7. Appliquer les styles suivants à l'espace de titre :
+
+    - centrer le texte de la division
+    - mettre un fond blanc
+    - appliquer un ```padding``` de 50px
+    - changer la police d'écriture en *Kenia, cursive*. Pour ce faire rajouter la ligne suivante dans la partie ```<head>```
+
+```html
+<link rel="stylesheet href="https://fonts.googleapis.com/css2?family=Kenia&display=swap">
+```
+    
+Pour réaliser cette étape, il va falloir : 
+
+1. créer un ```id``` pour la division de l'espace titre
+2. récupérer cet ```id``` dans **styles.css** en utilisant un #
+3. appliquer les filtres demandés
+
 
 
 ## Niveau 2. Menu
