@@ -102,7 +102,7 @@ Afin de simplifier la compréhension et l’écriture d’un tel algorithme, vou
 
 ### IV - Rendu
 
-Le rendu se passe ici : [dépôt](https://mega.nz/filerequest/a03m04qlOcU)
+Le rendu se passe ici : [dépôt](https://mega.nz/filerequest/RPEFFJJpdPo)
 
 Vous avez jusqu'au **dimanche 21/05 - 23h59** pour rendre votre travail.
 
@@ -112,7 +112,4 @@ Vous avez jusqu'au **dimanche 21/05 - 23h59** pour rendre votre travail.
 
 - Le fichier est bien évidemment votre fichier python. Celui-ci doit être contenu dans une archive ```.rar``` ou ```.zip```
 - Le nom de votre fichier doit être de la forme : ```nom_prenom_LibGraphe.rar``` ou ```nom_prenom_LibGraphe.zip```
-
-
-https://mega.nz/folder/YKcmUIBQ#gZQIjFlXwbOsA557JSQR5g
 
