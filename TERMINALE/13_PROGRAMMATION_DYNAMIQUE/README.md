@@ -76,6 +76,8 @@ Indiquer ce que produit le dernier appel. Que pouvez-vous en conclure ?
 Nous allons comparer nos deux méthodes. Pour ce faire, nous allons faire une étude en temps. Copier le code suivant, coller le dans votre fichier Python et exécuter votre fichier.
 
 ```python
+import matplotlib.pyplot as plt
+
 def mesure_temps(n):
     print(f"n = {n}")
 
