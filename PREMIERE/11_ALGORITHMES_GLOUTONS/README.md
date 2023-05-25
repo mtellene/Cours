@@ -1,4 +1,9 @@
-# Pour aller plus loin - Le voyageur de commerce
+# I - Le voyageur de commerce
+# II - Le sac à dos
+
+---
+
+# I - Le voyageur de commerce 
 
 Dans un premier TP, nous avons vu le principe des algorithmes gloutons. Nous avons appliqué ce principe pour résoudre le problème du rendu de monnaie. Il existe cependant d'autres problèmes qui peuvent être résolus en utilisant les algorithmes gloutons. Dans ce TP, nous nous intéresserons à la résolution du problème du voyageur de commerce.
 
@@ -376,3 +381,111 @@ distances = [
 - Quel est le circuit obtenu ?
 - Quel est le coût de ce circuit ?
 - Le circuit est-il optimal ?
+
+
+### II - Sac à dos
+
+Créer un fichier **sac_a_dos.py**. C'est dans ce fichier que sera à faire le travail de cette partie.
+
+
+#### 1. Description du problème
+
+
+Le problème du sac à dos, parfois noté (KP) (de l'anglais Knapsack Problem) est un problème d'optimisation combinatoire. Il consiste à trouver la combinaison d'éléments la plus précieuse à inclure dans un sac à dos, étant donné un ensemble d'éléments décrits par leurs poids et valeurs.
+
+L'objectif du problème du sac à dos est de sélectionner des objets à mettre dans le sac à dos de façon à **maximiser la somme des valeurs des objets pris, sous la contrainte que le poids total des objets pris ne dépasse pas la capacité du sac à dos**. Ce problème est NP-complet. Ainsi, il est difficile à résoudre, en particulier pour les grands ensembles d'objets.
+
+Une première approche serait, comme pour le rendu de monnaie, considérer toutes les possibilités respectant la contrainte de poids. Une fois fait, il suffirait de regarder quelle solution donne la meilleure somme.
+
+Pourquoi cette méthode est totalement irréalisable ?
+
+Si l'on considère *N* objets, il y a alors 2<sup>*N*</sup> combinaisons possibles.
+
+Le soucis est que s'il y a 2<sup>*N*</sup> possibilités, cela augmente très vite.
+
+- avec *N = 10*, on a *1 024* possibilités
+
+- avec *N = 20*, on a *1 048 576* possibilités
+
+- avec *N = 60*, on a *1 152 921 504 606 846 976* possibilités
+
+- avec *N = 300*, il a plus de combinaisons possibles qu'il y a d'atomes dans l'univers visible !
+
+#### 2. Algorithme glouton
+
+Écrire une fonction ```sad_ag(objets, capacite_max)``` qui renvoie la liste des objets pris, la valeur du sac et le poids du sac. Il est possible que pour la solution donnée, on a : ```poids(sac_a_dos) < capacite_max```.
+
+**Attention :** il est à noter que ```objets``` est un dictionnaire de dictionnaires. Cela implique que pour cette instance :
+
+| **Objet** | **Poids** | **Valeur** |
+|:-:|:-:|:-:|
+| A | 3 | 2700 |
+| B | 7 | 9100 |
+| C | 1 | 200 |
+| D | 4 | 4800 |
+| E | 6 | 7200 |
+| F | 2 | 2600 |
+
+
+La variable ```objets``` sera :
+
+```python
+objets = {
+    "A" = {"poids": 3, "valeur": 2700},
+    "B" = {"poids": 7, "valeur": 9100},
+    "C" = {"poids": 1, "valeur": 200},
+    "D" = {"poids": 4, "valeur": 4800},
+    "E" = {"poids": 6, "valeur": 7200},
+    "F" = {"poids": 2, "valeur": 2600}
+}
+```
+
+Pour rappel, le problème du sac à dos est résolu de manière gloutonne de la façon suivante : on considère les objets par ordre décroissant de valeur.
+
+- si on peut prendre l'objet, on le prend (et on fait ce qui en découle) et on continue
+
+- si on ne peut pas prendre l'objet, alors on passe au suivant
+
+- on fait ça tant qu'il reste des objets ou que poids du sac à dos est égal à la capacité maximale
+
+Une fois l'algorithme écrit, testez le sur les instances suivantes, vous indiquerez si la solution renvoyée est optimale :
+
+1.
+
+```python
+objets = {
+    "A" = {"poids": 3, "valeur": 8},
+    "B" = {"poids": 7, "valeur": 13},
+    "C" = {"poids": 3, "valeur": 10},
+    "D" = {"poids": 4, "valeur": 12}
+}
+
+capacite_max = 6
+```
+
+2.
+
+```python
+objets = {
+    "A" = {"poids": 4, "valeur": 300},
+    "B" = {"poids": 5, "valeur": 4000},
+    "C" = {"poids": 8, "valeur": 4800},
+    "C" = {"poids": 1, "valeur": 500}
+}
+
+capacite_max = 10
+```
+
+
+3.
+
+```python
+objets = {
+    "A" = {"poids": 5, "valeur": 3500},
+    "B" = {"poids": 1, "valeur": 500},
+    "C" = {"poids": 6, "valeur": 4800},
+    "C" = {"poids": 4, "valeur": 3000}
+}
+
+capacite_max = 10
+```
