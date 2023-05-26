@@ -108,7 +108,7 @@ On considère le tableau des distances précédent.
 On utilise les notations suivantes :
 
 ```python 
-a_visitee = ["Marseille", "Strasbourg", "Toulouse", "Brest"]```
+a_visitee = ["Marseille", "Strasbourg", "Toulouse", "Brest"]
 
 distances = [
     [float('inf'), 500, 275, 650],
