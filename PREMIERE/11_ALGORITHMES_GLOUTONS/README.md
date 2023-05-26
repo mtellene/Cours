@@ -93,7 +93,7 @@ Pour cela, on considère le tableau des distances énoncé précédemment.
     
 2. on actualise la liste des villes visitées et le distance parcourue. Le nombre de villes à parcourir est plus petit qu'avant : le problème a été simplifié
     
-3. on recommence le 1. jusqu'à avoir visité toutes les villes ; \textbf{attention, il ne faut pas repasser par une déjà visitée !}
+3. on recommence le 1. jusqu'à avoir visité toutes les villes ; **attention, il ne faut pas repasser par une déjà visitée !**
     
 4. une fois toutes les villes visitées, on revient à notre ville de départ
     
@@ -184,9 +184,9 @@ Nous avons parcouru toutes les villes, il faut donc retourner à notre ville de 
     
 Nous avons terminé le circuit, nous retournons le circuit établi et la distance parcourue
     
-- Quel est le contenu de la liste \texttt{visitees} ?
+- Quel est le contenu de la liste ```visitees``` ?
         
-- Quelle est la valeur de \texttt{distance\_totale} ?
+- Quelle est la valeur de ```distance_totale``` ?
 
 ---
 
@@ -280,7 +280,7 @@ Quel est le circuit obtenu ? Le circuit est-il optimal ?
 
 ### Création de l'environnement de travail
 
-Dans votre dossier personnel, créez dans le dossier **algorithmes_gloutons**. Dans ce dossier, créez un fichier ```voyageur\_commerce.py```. C'est dans ce fichier que vous ferez le travail demandé.
+Dans votre dossier personnel, créez dans le dossier **algorithmes_gloutons**. Dans ce dossier, créez un fichier ```voyageur_commerce.py```. C'est dans ce fichier que vous ferez le travail demandé.
 
 Soit le code suivant :
 
@@ -311,7 +311,7 @@ visitees = [True, False, False, False]
 ```
 ---
 
-Recopier et compléter la fonction ```voyageur\_commerce``` dans le fichier ```voyageur\_commerce.py```
+Recopier et compléter la fonction ```voyageur_commerce``` dans le fichier ```voyageur_commerce.py```
 
 
 Une fois la fonction écrite, faire les différents appels pour répondre aux questions
@@ -413,7 +413,11 @@ Le soucis est que s'il y a 2<sup>*N*</sup> possibilités, cela augmente très vi
 
 #### 2. Algorithme glouton
 
-Écrire une fonction ```sad_ag(objets, capacite_max)``` qui renvoie la liste des objets pris, la valeur du sac et le poids du sac. Il est possible que pour la solution donnée, on a : ```poids(sac_a_dos) < capacite_max```.
+Écrire une fonction ```sad_ag(objets, capacite_max)``` qui renvoie la liste des objets pris, la valeur du sac et le poids du sac. Il est possible que pour la solution donnée, on a : ```poids(sac_a_dos) < capacite_max```. Il faudra au préalable **trier les objets selon l'un des critères suivants** :
+
+- par valeur (du plus cher au moins cher)
+- par poids (du moins lourd au plus lourd)
+- par rapport valeur/poids (:fire:)
 
 **Attention :** il est à noter que ```objets``` est un dictionnaire de dictionnaires. Cela implique que pour cette instance :
 
@@ -431,12 +435,12 @@ La variable ```objets``` sera :
 
 ```python
 objets = {
-    "A" = {"poids": 3, "valeur": 2700},
-    "B" = {"poids": 7, "valeur": 9100},
-    "C" = {"poids": 1, "valeur": 200},
-    "D" = {"poids": 4, "valeur": 4800},
-    "E" = {"poids": 6, "valeur": 7200},
-    "F" = {"poids": 2, "valeur": 2600}
+    "A" : {"poids": 3, "valeur": 2700},
+    "B" : {"poids": 7, "valeur": 9100},
+    "C" : {"poids": 1, "valeur": 200},
+    "D" : {"poids": 4, "valeur": 4800},
+    "E" : {"poids": 6, "valeur": 7200},
+    "F" : {"poids": 2, "valeur": 2600}
 }
 ```
 
@@ -454,10 +458,10 @@ Une fois l'algorithme écrit, testez le sur les instances suivantes, vous indiqu
 
 ```python
 objets = {
-    "A" = {"poids": 3, "valeur": 8},
-    "B" = {"poids": 7, "valeur": 13},
-    "C" = {"poids": 3, "valeur": 10},
-    "D" = {"poids": 4, "valeur": 12}
+    "A" : {"poids": 3, "valeur": 8},
+    "B" : {"poids": 7, "valeur": 13},
+    "C" : {"poids": 3, "valeur": 10},
+    "D" : {"poids": 4, "valeur": 12}
 }
 
 capacite_max = 6
@@ -467,10 +471,10 @@ capacite_max = 6
 
 ```python
 objets = {
-    "A" = {"poids": 4, "valeur": 300},
-    "B" = {"poids": 5, "valeur": 4000},
-    "C" = {"poids": 8, "valeur": 4800},
-    "C" = {"poids": 1, "valeur": 500}
+    "A" : {"poids": 4, "valeur": 300},
+    "B" : {"poids": 5, "valeur": 4000},
+    "C" : {"poids": 8, "valeur": 4800},
+    "C" : {"poids": 1, "valeur": 500}
 }
 
 capacite_max = 10
@@ -481,10 +485,10 @@ capacite_max = 10
 
 ```python
 objets = {
-    "A" = {"poids": 5, "valeur": 3500},
-    "B" = {"poids": 1, "valeur": 500},
-    "C" = {"poids": 6, "valeur": 4800},
-    "C" = {"poids": 4, "valeur": 3000}
+    "A" : {"poids": 5, "valeur": 3500},
+    "B" : {"poids": 1, "valeur": 500},
+    "C" : {"poids": 6, "valeur": 4800},
+    "C" : {"poids": 4, "valeur": 3000}
 }
 
 capacite_max = 10
