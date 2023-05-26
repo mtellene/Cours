@@ -301,7 +301,7 @@ visitees = [True, False, False, False]
 
 ---
 #### Exercice
-Écrire une fonction ```plus_proche``` qui prend en argument l'indice d'une ville (issu de la liste de villes à visiter), le tableau des distances et la liste des villes visitées et qui renvoie l'indice de la ville la plus proche dans ```villes}```.
+Écrire une fonction ```plus_proche``` qui prend en argument l'indice d'une ville (issu de la liste de villes à visiter), le tableau des distances et la liste des villes visitées et qui renvoie l'indice de la ville la plus proche dans ```villes```.
 
 ``` python
 # en considérant le code précédant
@@ -334,7 +334,7 @@ distances = [
 
 2.
 ```python
-villes = ["Lyon", "Orléans", "Lilles"]}
+villes = ["Lyon", "Orléans", "Lilles"]
         
 distances = [
     [float('inf'), 450, 680],
