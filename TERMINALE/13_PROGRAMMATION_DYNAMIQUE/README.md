@@ -52,9 +52,7 @@ Le programme commence à mettre longtemps à calculer la réponse. Cela peut tr�
 
 Sur le schéma, on peut voir que le calcul de ```fibo_rec(3)``` et ```fibo_rec(4)``` se font plusieurs fois. C'est pour cela qu'à partir de *n = 35* le temps d'exécution est important : des mêmes calculs sont effecutés plusieurs fois.
 
-Une implémentation de Fibonacci suivant le principe de la programmation dynamique permet de réduire le temps d'exécution en se souvenant des calculs déjà effectués.
-
-Pour ce faire, au lieu de faire des appels récursifs pour calculer ```fibo_rec(n-1) + fibo_rec(n-2)```, nous ferons simplement des appels à ```fibo_tab[n-1] + fibo_tab[n-2]```. L'accès à un tableau est **beaucoup plus rapide** qu'un appel récursif.
+Une implémentation de Fibonacci suivant le principe de la programmation dynamique permet de réduire le temps d'exécution en se souvenant des calculs déjà effectués. Les calculs effectués seront mis dans un tableau. Ceci nous permettra de rendre plus rapide le calcul du résultat final. Ainsi, au lieu de faire des appels récursifs pour calculer ```fibo_rec(n-1) + fibo_rec(n-2)```, nous ferons simplement des appels à ```fibo_tab[n-1] + fibo_tab[n-2]```. Nous ferons donc chaque calcul une seule fois. De plus, l'accès à un tableau est **beaucoup plus rapide** qu'un appel récursif, ce qui améliorera le temps d'exécution de notre fonction.
 
 Écrire une fonction ```fibo_pg(n)``` qui calcule le rang *n* de la suite de Fibonacci. Cette fonction devra suivre le principe de la programmation dynamique.
 
@@ -133,25 +131,25 @@ Le problème du rendu de monnaie est un problème d'algorithmique. Il s'énonce 
 
 Par exemple, la meilleure façon de rendre 7 euros est de rendre un billet de cinq et une pièce de deux, même si d'autres façons existent (rendre 7 pièces de un euro, par exemple).
 
-Ce problème est NP-complet dans le cas général, c'est-à-dire difficile à résoudre.
+Ce problème est NP-complet dans le cas général, c'est-à-dire difficile à résoudre mais facile à vérifier. En effet détrminer la solution optimale n'est pas une tâche aisée mais vérifier qu'une solution est correcte est simple : il suffit de faire la somme des pièces rendues et de vérifier que cette dernière est bien égale au montant à rendre.
 
 Une première idée serait de lister toutes les possibilités de rendre un certain montant avec les pièces à disposition et d'utilisation la possibilité utilisant le moins de pièces. Ceci est la démarche *force brute*. Cette idée est réalisable sur les petite instance du problème : pas beaucoup de pièces à disposition et un petit montant à rendre. Cependant sur les grandes instances du problème, cette démarche est totalement irréalisable.
 
 
 #### 2. Algorithme glouton
 
-Écrire une fonction ```rendu_monnaie_ag(liste_pieces, montant)``` qui renvoie le nombre optimal de pièces à rendre, mais aussi le détail du rendu, pour le montant ```montant``` avec les pièces de ```liste_pieces```. Votre fonction devra suivre le principe glouton.
+Écrire une fonction ```rendu_monnaie_ag(liste_pieces, montant)``` qui renvoie le nombre optimal de pièces à rendre, mais aussi le détail du rendu, pour le montant ```montant``` avec les pièces de ```liste_pieces```. Votre fonction devra suivre le principe glouton. Vous savez que sur certaines instances de ce problème, les algorithmes gloutons ne permettent pas de donner une solution (cf. ```liste_pieces = [4,3,2]``` et ```montant = 6```). Ainsi, pour déterminer si votre algorithme a trouvé une solution optimale, il faudra renvoyer (en plus du nombre de pièces et du détail), le montant à rendre restant. Si celui-ci est égal à *0*, alors votre algorithme aura trouvé une solution acceptable, sinon la solution ne sera pas acceptable.
 
-Pour rappel, ce principe est le suivant : on prend les pièces de la plus grande à la plus petite.
+Pour rappel, le principe de l'algorithme glouton sur le problème du rendu de monnaie est le suivant : on prend les pièces de la plus grande à la plus petite.
 
-- si on peut prendre la pièce, on la prend (et on fait ce qui en découle) et on recommence
+- si on peut prendre la pièce, on la prend (on fait ce qui en découle) et on recommence
 
 - si on ne peut pas prendre la pièce, alors on passe à la pièce suivante
 
-- on fait ça tant qu'il reste des pièces et que le montant est non nul
+- on recommence tant qu'il reste des pièces et que le montant est non nul
 
 
-Une fois l'algorithme écrit, testez le sur les appels suivants :
+📝 Une fois l'algorithme écrit, testez le sur les appels suivants :
 
 | ```liste_pieces``` | ```montant``` | ```resultat``` | Solution optimale ? |
 |:-:|:-:|:-:|:-:|
@@ -166,7 +164,7 @@ Une fois l'algorithme écrit, testez le sur les appels suivants :
 
 **À noter :** certains systèmes de monnaie dits canoniques, l'algorithme glouton est optimal, c'est-à-dire qu'il suffit de rendre systématiquement la pièce ou le billet de valeur maximale — ce tant qu'il reste quelque chose à rendre. C'est la méthode employée en pratique, ce qui se justifie car la quasi-totalité des systèmes ayant cours dans le monde sont canoniques. Il n'existe pas, à ce jour, de caractérisation générale des systèmes canoniques, mais il existe une méthode efficace pour déterminer si un système donné est canonique.
 
-On remarque que sur certaines instances, le rendu de monnaie version gloutonne ne donne pas la solution optimale et des fois, pas de solution du tout. Nous allons donc programmer un algorithme suivant le principe de la programmation dynamique.
+Comme dit précédemment, on remarque que sur certaines instances, le rendu de monnaie version gloutonne ne donne pas la solution optimale et des fois, pas de solution du tout. Nous allons donc programmer un algorithme suivant le principe de la programmation dynamique pour parer à ces problèmes.
 
 Pour rappel, la programmation dynamique consiste à se souvenir des calculs intermédiaires afin de calculer une solution finale.
 
@@ -191,9 +189,7 @@ Une première approche serait, comme pour le rendu de monnaie, considérer toute
 
 Pourquoi cette méthode est totalement irréalisable ?
 
-Si l'on considère *N* objets, il y a alors 2<sup>*N*</sup> combinaisons possibles.
-
-Le soucis est que s'il y a 2<sup>*N*</sup> possibilités, cela augmente très vite.
+Si l'on considère *N* objets, il y a alors 2<sup>*N*</sup> combinaisons possibles (soit on prend l'objet, soit on ne prend pas). Le soucis est que s'il y a 2<sup>*N*</sup> possibilités, cela augmente très vite.
 
 - avec *N = 10*, on a *1 024* possibilités
 
@@ -205,7 +201,11 @@ Le soucis est que s'il y a 2<sup>*N*</sup> possibilités, cela augmente très vi
 
 #### 2. Algorithme glouton
 
-Écrire une fonction ```sad_ag(objets, capacite_max)``` qui renvoie la liste des objets pris, la valeur du sac et le poids du sac. Il est possible que pour la solution donnée, on a : ```poids(sac_a_dos) < capacite_max```.
+Écrire une fonction ```sad_ag(objets, capacite_max)``` qui renvoie la liste des objets pris, la valeur du sac et le poids du sac. Il est possible que pour la solution donnée, on a : ```poids(sac_a_dos) < capacite_max```. Avant de vous lancer dans la résolution, il faudra trier les objets selon l'un des critères suivants :
+
+- par valeur (du plus cher au moins cher)
+- par poids (du moins lourd au plus lourd)
+- par rapport valeur/poids (:fire:), généralement, c'est méthode qui donne les meilleurs résultats
 
 **Attention :** il est à noter que ```objets``` est un dictionnaire de dictionnaires. Cela implique que pour cette instance :
 
@@ -223,18 +223,18 @@ La variable ```objets``` sera :
 
 ```python
 objets = {
-    "A" = {"poids": 3, "valeur": 2700},
-    "B" = {"poids": 7, "valeur": 9100},
-    "C" = {"poids": 1, "valeur": 200},
-    "D" = {"poids": 4, "valeur": 4800},
-    "E" = {"poids": 6, "valeur": 7200},
-    "F" = {"poids": 2, "valeur": 2600}
+    "A" : {"poids": 3, "valeur": 2700},
+    "B" : {"poids": 7, "valeur": 9100},
+    "C" : {"poids": 1, "valeur": 200},
+    "D" : {"poids": 4, "valeur": 4800},
+    "E" : {"poids": 6, "valeur": 7200},
+    "F" : {"poids": 2, "valeur": 2600}
 }
 ```
 
 Pour rappel, le problème du sac à dos est résolu de manière gloutonne de la façon suivante : on considère les objets par ordre décroissant de valeur.
 
-- si on peut prendre l'objet, on le prend (et on fait ce qui en découle) et on continue
+- si on peut prendre l'objet, on le prend (on fait ce qui en découle) et on continue
 
 - si on ne peut pas prendre l'objet, alors on passe au suivant
 
@@ -246,10 +246,10 @@ Une fois l'algorithme écrit, testez le sur les instances suivantes, vous indiqu
 
 ```python
 objets = {
-    "A" = {"poids": 3, "valeur": 8},
-    "B" = {"poids": 7, "valeur": 13},
-    "C" = {"poids": 3, "valeur": 10},
-    "D" = {"poids": 4, "valeur": 12}
+    "A" : {"poids": 3, "valeur": 8},
+    "B" : {"poids": 7, "valeur": 13},
+    "C" : {"poids": 3, "valeur": 10},
+    "D" : {"poids": 4, "valeur": 12}
 }
 
 capacite_max = 6
@@ -259,10 +259,10 @@ capacite_max = 6
 
 ```python
 objets = {
-    "A" = {"poids": 4, "valeur": 300},
-    "B" = {"poids": 5, "valeur": 4000},
-    "C" = {"poids": 8, "valeur": 4800},
-    "C" = {"poids": 1, "valeur": 500}
+    "A" : {"poids": 4, "valeur": 300},
+    "B" : {"poids": 5, "valeur": 4000},
+    "C" : {"poids": 8, "valeur": 4800},
+    "C" : {"poids": 1, "valeur": 500}
 }
 
 capacite_max = 10
@@ -273,10 +273,10 @@ capacite_max = 10
 
 ```python
 objets = {
-    "A" = {"poids": 5, "valeur": 3500},
-    "B" = {"poids": 1, "valeur": 500},
-    "C" = {"poids": 6, "valeur": 4800},
-    "C" = {"poids": 4, "valeur": 3000}
+    "A" : {"poids": 5, "valeur": 3500},
+    "B" : {"poids": 1, "valeur": 500},
+    "C" : {"poids": 6, "valeur": 4800},
+    "C" : {"poids": 4, "valeur": 3000}
 }
 
 capacite_max = 10
