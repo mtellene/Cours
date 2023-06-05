@@ -1,6 +1,6 @@
 # Pacman
 
-![Pacman logo](https://github.com/mtellene/NSI/blob/main/TERMINALE/99_PROJETS/pacman/assets/pacman_logo.jpg)
+![Pacman logo](https://github.com/mtellene/NSI/blob/main/TERMINALE/99_PROJETS/Pacman/assets/pacman_logo.jpg)
 
 ## I - Le jeu
 ## II - Cahier des charges
@@ -57,7 +57,7 @@ Le labyrinthe est représenté, en machine, par une matrice de *31* cases de hau
 
 la première étape est donc d'afficher ce plateau dans la fenêtre ```tkinter```. Le résultat devrait être le suivant :
 
-![Pacman logo](https://github.com/mtellene/NSI/blob/main/TERMINALE/99_PROJETS/pacman/assets/plateau.png)
+![Pacman logo](https://github.com/mtellene/NSI/blob/main/TERMINALE/99_PROJETS/Pacman/assets/plateau.png)
 
 
 ### 2. Gestion de Pacman
