@@ -23,7 +23,7 @@ Pac-Man (パックマン, Pakkuman) (initialement intitulé Puck-man) est un jeu
 
 
 ## II - Cahier des charges
-### 1. Explications globales
+### 1. Explications globales
 
 Dans notre version de Pacman, 3 classes seront utilisées :
 
