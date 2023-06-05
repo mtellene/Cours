@@ -4,7 +4,7 @@
 
 ## I - Le jeu
 ## II - Cahier des charges
-### 1. Explications globales
+### 1. Explications globales
 ### 2. Ne pas partir de 0
 
 ## III - Les différentes étapes du projet
