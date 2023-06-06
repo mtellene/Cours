@@ -78,7 +78,7 @@ La page commence à prendre mais l'affichage du header n'est pas incroyable, cha
 
 Dans cette partie, nous allons mettre en forme le header afin d'avoir un affichage plus propre.
 
-1. Appliquer les styles suivants à la balise header :
+1. Appliquer les styles suivants à la balise ```header``` :
 
     - appliquer à l'attribut ```display``` la valeur ```flex```. Ce style a pour effet de créer une *flexbox* (raccourci pour CSS Flexible Box Layout Module), un standard CSS3 de disposition des éléments dans une page web
 
