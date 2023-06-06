@@ -54,11 +54,11 @@ Vous n’avez pas le droit d’utiliser de framework.
 
     - centrer le texte de la division
     - mettre un fond blanc
-    - appliquer un ```padding``` de 50px
+    - appliquer un ```padding``` de *50px*
     - changer la police d'écriture en *Kenia, cursive*. Pour ce faire rajouter la ligne suivante dans la partie ```<head>```
 
 ```html
-<link rel="stylesheet href="https://fonts.googleapis.com/css2?family=Kenia&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kenia&display=swap">
 ```
     
 Pour réaliser cette étape, il va falloir : 
