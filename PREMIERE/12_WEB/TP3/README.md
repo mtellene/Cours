@@ -256,7 +256,7 @@ Vous pouvez remarquer que notre fonction utilise deux constantes : ```C_WIDTH```
 
 **Si vous avez tout bien fait**, rafraîchissez votre page et vous devriez avoir ceci :
 
-![snake1](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP3/asset/snake1.png)
+![snake1](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP3/assets/snake1.png)
 
 Si tout est bon, passons à la suite : occupons-nous du déplacement. En effet, le snake est jeu basé sur le déplacement d'un serpent, or nous ne pouvons pas le déplacer pour l'instant. Commencez par créer en haut de votre fichier quatre variables :
 
