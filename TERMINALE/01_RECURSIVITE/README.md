@@ -194,3 +194,7 @@ def line_plot(pr, dr):
 rec, ite = test()
 line_plot(rec, ite)
 ```
+
+7. 🖥️ Exécuter le programme
+
+8. 📝 Faire la représentation graphique qui s'affiche sur votre écran, vous respecterez les couleurs et les échelles utilisées
