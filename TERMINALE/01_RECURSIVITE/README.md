@@ -146,3 +146,51 @@ print(f"Le temps d'exécution de la fonction est de {fin-debut}")
 | *34* | | |
 | *35* | | |
 | *36* | | |
+
+5. 📝 Expliquer la différence de temps entre les deux algorithmes lorsque *n* augmente
+
+6. Nous allons terminer par tracer les courbes des temps d'exécution. Pour ce faire, nous utiliserons la librairie ```matplotlib.pyplot```, vous renommerez cette librairie, lors de l'import, par ```plt```. Ajouter et compléter dans votre fichier le code suivant :
+
+
+```python
+def mesure_temps (n):
+  ...... # faire une sonde de temps avec time
+  ...... # appel de la fonction fibo avec le paramètre n
+  ...... # faire une sonde de temps avec time
+  duree_rec = ...... # calculer le temps d'exécution
+  
+  # faire pareil pour fibo_ite
+  ......
+  ......
+  ......
+  duree_ite = ......
+  
+  ...... # renvoyer duree_rec et duree_ite
+
+
+def test():
+    L = [5, 10, 15, 20, 25, 30, 33, 34, 35]
+    ...... # créer une liste vide duree_rec
+    ...... # créer une liste vide duree_ite
+    for elt in L:
+        ...... # lancer la fonction mesure_temps avec elt en paramètre et récupérer les résultats dans x et y
+        ...... # ajouter x dans duree_rec
+        ...... # ajouter y dans duree_ite
+    ...... # renvoyer duree_rec et duree_ite
+
+def line_plot(pr, dr):
+    x = [4000, 8000, 16000, 36000, 64000, 128000, 256000]
+    courbe1 = rec
+    courbe2 = ite
+
+    _, ax = plt.subplots()
+    ax.plot(x, courbe1, label ="Version récursive")
+    ax.plot(x, courbe2, label ="Version itérative")
+    plt.title("Récursif vs Itératif")
+    ax.legend()
+
+    plt.show()
+    
+rec, ite = test()
+line_plot(rec, ite)
+```
