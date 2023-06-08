@@ -38,7 +38,7 @@ Vous n’avez pas le droit d’utiliser de framework.
 
 2. Dans le body, créer un header. Pour ce faire utiliser la balise ```<header>...</header>```
 
-3. Dans le header, nous allons commencer pour créer l'espace de titre :
+3. Dans le header, nous allons commencer pour créer la division contenant le titre et le slogan :
 
     1. Créer une division avec la balise ```<div>...</div>```
     2. Dans cette division, ajouter le titre **NS'EAT** sous la forme d’une balise h1
@@ -84,7 +84,7 @@ Dans cette partie, nous allons mettre en forme le header afin d'avoir un afficha
 
     - après avoir écrit cette ligne, l'affichage est encore pire... nous allons alors appliqué à l'attribut ```flex-direction``` la valeur ```column```, à l'attribut ```justify-content``` la valeur ```center``` et à l'attribut ```align-items``` la valeur ```center```
 
-    - maintenant l'affichage est bien mieux ! Stylisons encore notre page. Ajouter à l'espace de titre le style suivant :
+    - maintenant l'affichage est bien mieux ! Stylisons encore notre page. Ajouter à la division contenant le titre et le slogan le style suivant :
 
 ```css
 box-shadow : -13px 13px 2px 1px rgba(0, 0, 0, .2)
@@ -102,7 +102,7 @@ Maintenant, nous avons un super affichage pour notre page ! Mais notre menu de n
 
     - passer la taille de la police à 20px
 
-    - changer la police d'écriture pour mettre *Kenia, cursive* (la même police que l'espace de titre)
+    - changer la police d'écriture pour mettre *Kenia, cursive* (la même police que la division contenant le titre et le slogan)
 
 3. Ajouter une image derrière chaque élément du menu
 
