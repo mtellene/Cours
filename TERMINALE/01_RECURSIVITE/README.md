@@ -34,20 +34,51 @@ La récursivité permet, en plus de résoudre des problèmes mathématiques, de 
 
 2. 🖥️ Écrire une fonction récursive ```concatenation(L1, L2)``` qui renvoie la concaténation de deux listes passées en paramètre. On mettra dans un premier temps les éléments de *L1* avant ceux de *L2*. *Pour rappel la concaténation de deux listes se fait grâce à l'opérateur « + » et consiste à créer une liste à partir des deux.
 
-3. 🖥️ Sur les bases de la fonction ```concatenation(L1, L2)```, créer une nouvelle fonction ```concat_avec_tri(L1, L2)``` qui concatène deux listes ensembles **MAIS** qui crée une liste triée. Le fonctionnement est donné par le schéma suivant :
+3. 🖥️ Écrire une fonction récursive ```renverse(L)``` qui renvoie la liste passée en argument dans l'ordre inverse :
+
+```python
+>>> renverse([1,2,3])
+[3,2,1]
+```
+
+4. 🖥️ Écrire une fonction récursive ```nb_occ(L, x)``` qui renvoie le nombre d'occurrences (nombre de fois qu'apparaît) de *x* dans *L*
 
 
+### Exercice 4
 
-# TODO
+Le PGCD de *a* et *b* est le plus grand nombre qui est diviseur à la fois de *a* et de *b*.
 
-### Exercice 1
+🖥️ Écrire une fonction récursive ```pgcd(a,b)``` renvoyant le PGCD de deux entiers *a* et *b*.
+
+
+### Exercice 5
+
+Un nombre premier est un entier naturel qui admet **exactement deux diviseurs distincts entiers et positifs** : 1 et le nombre considéré.
+
+🖥️ Écrire une fonction récursive ```est_premier(n,i)``` renvoyant ```True``` si *n* est premier, ```False``` sinon. Il est à noter que la variable *i* permet de tester la divisibilité de *n*.
+
+
+### Exercice 6
+
+Un nombre *n* est pair si *(n-1)* est impair, et un nombre *n* est impair si *(n-1)* est pair.
+
+🖥️ Écrire une fonction **deux fonctions récursives mutuelles** ```pair(n)``` et ```impair(n)``` permettant de savoir si un nombre *n* est pair ou impair.
+
+📝 Décrire les échanges entre les deux fonctions lors des appels suivants :
+
+- *n=0*
+- *n=1*
+- *n=2*
+
+
+### Exercice 7
 
 Pour convertir un nombre entier positif *n* de la base décimale à la base binaire, il est possible d'opérer avec des divisions successives de *n* par 2. Les restes de ces divisions constituent la représentation binaire.
 
 🖥️ Écrire une fonction récursive ```binaire(n)``` permettant de calculer la représentation binaire d'un nombre *n*. La fonction devra renvoyer une liste où chaqué élément est un bit (```int```) de la représentation binaire.
 
 
-### Exercice 2
+### Exercice 8
 
 La suite doit son nom à Leonardo Fibonacci qui, dans un problème récréatif posé dans l'ouvrage *Liber abaci* publié en 1202, décrit la croissance d'une population de lapins : « Quelqu’un a déposé un couple de lapins dans un certain lieu, clos de toutes parts, pour savoir combien de couples seraient issus de cette paire en une année, car il est dans leur nature de générer un autre couple en un seul mois, et qu’ils enfantent dans le second mois après leur naissance. »
 
@@ -68,29 +99,50 @@ Ainsi la suite de Fibonacci se définit comme suit :
 
 📝 Décrire l'arbre d'appels de la fonction ```fibo(n)```
 
+Il est donné ci-dessous une version itérative (sans récursivité) de ```fibo(n)``` :
 
-### Exercice 3
+```python
+def fibo_ite(n):
+  premier = 0
+  deuxieme = 1
+  
+  if n == 0: return premier
+  
+  for _ in range(n):
+    prochain = premier + deuxieme
+    premier = deuxieme
+    deuxieme = prochain
+    
+  return deuxieme
+```
 
-Un nombre *n* est pair si *(n-1)* est impair, et un nombre *n* est impair si *(n-1)* est pair.
+La récursivité est une bonne méthode de programmation, mais peut parfois mener à des programmes moins performants que la version itérative. Nous allons comparer l'efficacité des deux algorithmes en utilisant la librairie ```time```.
 
-🖥️ Écrire une fonction **deux fonctions récursives mutuelles** ```pair(n)``` et ```impair(n)``` permettant de savoir si un nombre *n* est pair ou impair.
+1. 🖥️ Mettre les fonctions ```fibo``` et ```fibo_ite``` dans le même fichier
 
-📝 Décrire les échanges entre les deux fonctions lors des appels suivants :
+2. 🖥️ Importer la fonction ```time``` de la librairie ```time```
 
-- *n=0*
-- *n=1*
-- *n=2*
+3. 🖥️ Utiliser la fonction ```time``` pour mesurer le temps d'exécution, voici la démarche à suivre :
 
+```python
+debut = time()
+### appel de la fonction à tester ###
+fin = time()
 
-### Exercice 4
+print(f"Le temps d'exécution de la fonction est de {fin-debut}")
+```
 
-Un nombre premier est un entier naturel qui admet **exactement deux diviseurs distincts entiers et positifs** : 1 et le nombre considéré.
+4. 📝 Remplir le tableau suivant :
 
-🖥️ Écrire une fonction récursive ```est_premier(n,i)``` renvoyant ```True``` si *n* est premier, ```False``` sinon. Il est à noter que la variable *i* permet de tester la divisibilité de *n*.
-
-
-### Exercice 5
-
-Le PGCD de *a* et *b* est le plus grand nombre qui est diviseur à la fois de *a* et de *b*.
-
-🖥️ Écrire une fonction récursive ```pgcd(a,b)``` renvoyant le PGCD de deux entiers *a* et *b*.
+| *n* | temps de ```fibo``` | temps de ```fibo_ite``` |
+| :-: | :-: | :-: |
+| *5* | 1.45e-05 | 1.45e-05 |
+| *10* | | |
+| *15* | | |
+| *20* | | |
+| *25* | | |
+| *30* | | |
+| *33* | | |
+| *34* | | |
+| *35* | | |
+| *36* | | |
