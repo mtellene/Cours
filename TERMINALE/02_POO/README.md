@@ -36,7 +36,7 @@ Exemple :
 
 # accès à un attribut
 >>> medor.nom
-Médor
+"Médor"
 
 # accès à une méthode
 >>> medor.aboyer()
