@@ -36,7 +36,7 @@ Créer un fichier **fibonacci.py**. C'est dans ce fichier que sera à faire le t
 
 #### 1. Algorithme récursif
 
-Écrire une fonction récursive ```fibo_rec(n)``` qui calcule le rang *n* de la suite de Fibonacci.
+🖥️ Écrire une fonction récursive ```fibo_rec(n)``` qui calcule le rang *n* de la suite de Fibonacci.
 
 #### 2. Programmation dynamique
 
@@ -54,7 +54,7 @@ Sur le schéma, on peut voir que le calcul de ```fibo_rec(3)``` et ```fibo_rec(4
 
 Une implémentation de Fibonacci suivant le principe de la programmation dynamique permet de réduire le temps d'exécution en se souvenant des calculs déjà effectués. Les calculs effectués seront mis dans un tableau. Ceci nous permettra de rendre plus rapide le calcul du résultat final. Ainsi, au lieu de faire des appels récursifs pour calculer ```fibo_rec(n-1) + fibo_rec(n-2)```, nous ferons simplement des appels à ```fibo_tab[n-1] + fibo_tab[n-2]```. Nous ferons donc chaque calcul une seule fois. De plus, l'accès à un tableau est **beaucoup plus rapide** qu'un appel récursif, ce qui améliorera le temps d'exécution de notre fonction.
 
-Écrire une fonction ```fibo_pg(n)``` qui calcule le rang *n* de la suite de Fibonacci. Cette fonction devra suivre le principe de la programmation dynamique.
+🖥️ Écrire une fonction ```fibo_pg(n)``` qui calcule le rang *n* de la suite de Fibonacci. Cette fonction devra suivre le principe de la programmation dynamique.
 
 Une fois la fonction finie, réaliser les appels suivants (il est à noter que les appels ci-dessous ne sont pas réalisables avec l'algorithme récursif) :
 
@@ -66,7 +66,7 @@ fibo_pg(10000)
 fibo_pg(100000)
 ```
 
-Indiquer ce que produit le dernier appel. Que pouvez-vous en conclure ?
+📝 Indiquer ce que produit le dernier appel. Que pouvez-vous en conclure ?
 
 
 #### 3. Comparaison des méthodes
@@ -117,7 +117,8 @@ d1, d2 = test()
 line_plot(d1, d2)
 ```
 
-Que pouvez-vous remarquer ? 
+📝 Dessiner les courbes obtenues.
+📝 Que pouvez-vous remarquer ? 
 
 
 ### III - Rendu de monnaie
@@ -138,7 +139,7 @@ Une première idée serait de lister toutes les possibilités de rendre un certa
 
 #### 2. Algorithme glouton
 
-Écrire une fonction ```rendu_monnaie_ag(liste_pieces, montant)``` qui renvoie le nombre optimal de pièces à rendre, mais aussi le détail du rendu, pour le montant ```montant``` avec les pièces de ```liste_pieces```. Votre fonction devra suivre le principe glouton. Vous savez que sur certaines instances de ce problème, les algorithmes gloutons ne permettent pas de donner une solution (cf. ```liste_pieces = [4,3,2]``` et ```montant = 6```). Ainsi, pour déterminer si votre algorithme a trouvé une solution optimale, il faudra renvoyer (en plus du nombre de pièces et du détail), le montant à rendre restant. Si celui-ci est égal à *0*, alors votre algorithme aura trouvé une solution acceptable, sinon la solution ne sera pas acceptable.
+🖥️ Écrire une fonction ```rendu_monnaie_ag(liste_pieces, montant)``` qui renvoie le nombre optimal de pièces à rendre, mais aussi le détail du rendu, pour le montant ```montant``` avec les pièces de ```liste_pieces```. Votre fonction devra suivre le principe glouton. Vous savez que sur certaines instances de ce problème, les algorithmes gloutons ne permettent pas de donner une solution (cf. ```liste_pieces = [4,3,2]``` et ```montant = 6```). Ainsi, pour déterminer si votre algorithme a trouvé une solution optimale, il faudra renvoyer (en plus du nombre de pièces et du détail), le montant à rendre restant. Si celui-ci est égal à *0*, alors votre algorithme aura trouvé une solution acceptable, sinon la solution ne sera pas acceptable.
 
 Pour rappel, le principe de l'algorithme glouton sur le problème du rendu de monnaie est le suivant : on prend les pièces de la plus grande à la plus petite.
 
@@ -149,7 +150,7 @@ Pour rappel, le principe de l'algorithme glouton sur le problème du rendu de mo
 - on recommence tant qu'il reste des pièces et que le montant est non nul
 
 
-📝 Une fois l'algorithme écrit, testez le sur les appels suivants :
+📝 Refaire le tableau et le compléter en réalisant les appels approprié :
 
 | ```liste_pieces``` | ```montant``` | ```resultat``` | Solution optimale ? |
 |:-:|:-:|:-:|:-:|
@@ -168,9 +169,9 @@ Comme dit précédemment, on remarque que sur certaines instances, le rendu de m
 
 Pour rappel, la programmation dynamique consiste à se souvenir des calculs intermédiaires afin de calculer une solution finale.
 
-Écrire une fonction ```rendu_monnaie_pg(liste_pieces, montant)``` qui renvoie le nombre optimal de pièces à rendre, mais aussi le détail du rendu, pour le montant ```montant``` avec les pièces de ```liste_pieces```. Cette fonction devra suivre le principe de la programmation dynamique.
+🖥️ Écrire une fonction ```rendu_monnaie_pg(liste_pieces, montant)``` qui renvoie le nombre optimal de pièces à rendre, mais aussi le détail du rendu, pour le montant ```montant``` avec les pièces de ```liste_pieces```. Cette fonction devra suivre le principe de la programmation dynamique.
 
-Une fois fait, tester votre fonction sur les appels réalisés sur l'algorithme glouton. 
+🖥️ Une fois fait, tester votre fonction sur les appels réalisés sur l'algorithme glouton. 
 
 
 ### IV - Sac à dos
@@ -187,21 +188,12 @@ L'objectif du problème du sac à dos est de sélectionner des objets à mettre 
 
 Une première approche serait, comme pour le rendu de monnaie, considérer toutes les possibilités respectant la contrainte de poids. Une fois fait, il suffirait de regarder quelle solution donne la meilleure somme.
 
-Pourquoi cette méthode est totalement irréalisable ?
+📝 Expliquer pourquoi cette méthode est totalement irréalisable ?
 
-Si l'on considère *N* objets, il y a alors 2<sup>*N*</sup> combinaisons possibles (soit on prend l'objet, soit on ne prend pas). Le soucis est que s'il y a 2<sup>*N*</sup> possibilités, cela augmente très vite.
-
-- avec *N = 10*, on a *1 024* possibilités
-
-- avec *N = 20*, on a *1 048 576* possibilités
-
-- avec *N = 60*, on a *1 152 921 504 606 846 976* possibilités
-
-- avec *N = 300*, il a plus de combinaisons possibles qu'il y a d'atomes dans l'univers visible !
 
 #### 2. Algorithme glouton
 
-Écrire une fonction ```sad_ag(objets, capacite_max)``` qui renvoie la liste des objets pris, la valeur du sac et le poids du sac. Il est possible que pour la solution donnée, on a : ```poids(sac_a_dos) < capacite_max```. Avant de vous lancer dans la résolution, il faudra trier les objets selon l'un des critères suivants :
+🖥️ Écrire une fonction ```sad_ag(objets, capacite_max)``` qui renvoie la liste des objets pris, la valeur du sac et le poids du sac. Il est possible que pour la solution donnée, on a : ```poids(sac_a_dos) < capacite_max```. Avant de vous lancer dans la résolution, il faudra trier les objets selon l'un des critères suivants :
 
 - par valeur (du plus cher au moins cher)
 - par poids (du moins lourd au plus lourd)
@@ -287,7 +279,7 @@ capacite_max = 10
 
 Résolvons maintenant ce problème en utilisant la programmation dynamique.
 
-Écrire une fonction ```sad_pg(objets, capacite_max)``` qui renvoie la liste des objets pris, la valeur du sac et le poids du sac. Il est possible que pour la solution donnée, on a : ```poids(sac_a_dos) < capacite_max```. Cette fonction devra suivre le principe de la programmation dynamique.
+🖥️ Écrire une fonction ```sad_pg(objets, capacite_max)``` qui renvoie la liste des objets pris, la valeur du sac et le poids du sac. Il est possible que pour la solution donnée, on a : ```poids(sac_a_dos) < capacite_max```. Cette fonction devra suivre le principe de la programmation dynamique.
 
 Voici la démarche suivie par la programmation dynamique pour résoudre ce problème (cf. cela se passe à peu près de la même manière que pour le rendu de monnaie) :
 
