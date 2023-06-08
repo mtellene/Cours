@@ -50,7 +50,7 @@ Vous n’avez pas le droit d’utiliser de framework.
 
 6. Mettre le fond de la page en bleu (code couleur #1695DA)
 
-7. Appliquer les styles suivants à l'espace de titre :
+7. Appliquer les styles suivants à la division contenant le titre et le slogan :
 
     - centrer le texte de la division
     - mettre un fond blanc
@@ -63,7 +63,7 @@ Vous n’avez pas le droit d’utiliser de framework.
     
 Pour réaliser cette étape, il va falloir : 
 
-1. créer un ```id``` pour la division de l'espace titre
+1. créer un ```id``` pour la division contenant le titre et le slogan
 2. récupérer cet ```id``` dans **styles.css** en utilisant un #
 3. appliquer les filtres demandés
 
