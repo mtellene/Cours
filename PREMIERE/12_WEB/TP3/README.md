@@ -190,7 +190,7 @@ Une fois fait, nous allons nous occuper de la fonction ```charger_image```. Cett
 
 Vous trouverez [ici](https://developer.mozilla.org/fr/docs/Web/API/HTMLImageElement/Image) une aide concernant les images.
 
-Occupons-nous à présent de la fonction ```creer_serpent```. Cette fonction sert à créer et garder les coordonnées du notre serpent. Pour ce faire, nous allons commencer par créer trois variables et une constante.
+Occupons-nous à présent de la fonction ```creer_serpent```. Cette fonction sert à créer et garder les coordonnées de notre serpent. Pour ce faire, nous allons commencer par créer trois variables et une constante.
 
 - Créez une constante ```TOUS_LES_POINTS``` initialisée avec la valeur *900*
 - Créez deux variables (avec le mot-clé ```var```) : ```x``` et ```y```. Ces variables seront des tableaux ayant une taille de ```TOUS_LES_POINTS``` éléments. Pour créer un tableau en JavaScript, il faut utiliser la syntaxe suivante :
