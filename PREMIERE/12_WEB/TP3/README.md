@@ -35,7 +35,7 @@ La ligne
 <script src="script.js"></script>
 ```
 
-permet de faire un lien entre votre fichier HTML et un fichier JavaScript ```script.js```. Cette devra être la dernière avec la balise ```</body>``` Une fois fait, ouvrez votre page dans un navigateur et ouvrez la console. La touche habituelle pour ouvrir la console est ```F12```, puis aller dans l'onglet "console".
+permet de faire un lien entre votre fichier HTML et un fichier JavaScript ```script.js```. Cette instruction devra être la dernière avant la balise ```</body>``` Une fois fait, ouvrez votre page dans un navigateur et ouvrez la console. La touche habituelle pour ouvrir la console est ```F12```, puis aller dans l'onglet "console".
 
 
 ## II - Manipulations simples en console
