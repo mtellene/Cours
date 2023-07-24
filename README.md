@@ -1,2 +1,6 @@
-# NSI
-Git pour la première et terminale NSI
+# Cours
+
+- Seconde (à venir)
+- Première NSI
+- Terminale NSI
+- BTS (à venir)
