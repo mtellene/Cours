@@ -3,4 +3,4 @@
 - Seconde (à venir)
 - Première NSI
 - Terminale NSI
-- BTS (à venir)
+- BTS SIO
