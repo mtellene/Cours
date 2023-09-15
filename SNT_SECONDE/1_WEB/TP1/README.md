@@ -50,6 +50,7 @@ La structure d'une page web est la suivante :
 ## III - Quelques manipulations
 
 
+
 ### 1. Mise en place de la structure
 
 Dans votre fichier créé, copiez le code suivant :
