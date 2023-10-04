@@ -126,7 +126,7 @@ Maintenant, nous avons un super affichage pour notre page ! Mais notre menu de n
 
 À ce stade, vous devriez avoir une page comme ceci
 
-![Vérfication 2](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP2/assets/verif_2.png)
+![Vérfication 2](https://github.com/mtellene/Cours/blob/main/BTS_SIO/1ere_ann%C3%A9e/1_HTML_CSS_JS/TPs_entrainement/TP2/assets/verif_2.png)
 
 
 ## V - Ajout de contenu
@@ -179,18 +179,18 @@ L'affichage de ce que nous venons de faire n'est pas très bien, modifions ça !
 
 Les changements faits devraient mener à ce résultat :
 
-![Vérfication 3](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP2/assets/verif_3.png)
+![Vérfication 3](https://github.com/mtellene/Cours/blob/main/BTS_SIO/1ere_ann%C3%A9e/1_HTML_CSS_JS/TPs_entrainement/TP2/assets/verif_3.png)
 
 
 ## VI - À votre tour
 
 Vous avez toutes les clés en main, à vous de recréer la page suivante :
 
-![Résultat final1](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP2/assets/res1.jpg)
+![Résultat final1](https://github.com/mtellene/Cours/blob/main/BTS_SIO/1ere_ann%C3%A9e/1_HTML_CSS_JS/TPs_entrainement/TP2/assets/res1.jpg)
 
-![Résultat final2](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP2/assets/res2.jpg)
+![Résultat final2](https://github.com/mtellene/Cours/blob/main/BTS_SIO/1ere_ann%C3%A9e/1_HTML_CSS_JS/TPs_entrainement/TP2/assets/res2.jpg)
 
-![Résultat final3](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP2/assets/res3.jpg)
+![Résultat final3](https://github.com/mtellene/Cours/blob/main/BTS_SIO/1ere_ann%C3%A9e/1_HTML_CSS_JS/TPs_entrainement/TP2/assets/res3.jpg)
 
 En plus de l'aspect visuel, vous rajouter des liens hypertextes sur les éléments du menu. Ces liens devront ramener vers la section associée. Il faudra aussi changer du style :
 
