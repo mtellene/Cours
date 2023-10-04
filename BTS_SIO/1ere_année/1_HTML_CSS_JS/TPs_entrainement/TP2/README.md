@@ -69,7 +69,7 @@ Pour réaliser cette étape, il va falloir :
 
 À ce stade, vous devriez avoir une page comme ceci
 
-![Vérfication 1](https://github.com/mtellene/NSI/blob/main/PREMIERE/12_WEB/TP2/assets/verif_1.png)
+![Vérfication 1](https://github.com/mtellene/Cours/blob/main/BTS_SIO/1ere_ann%C3%A9e/1_HTML_CSS_JS/TPs_entrainement/TP2/assets/verif_1.png)
 
 La page commence à prendre mais l'affichage du header n'est pas incroyable, changeons ça.
 
