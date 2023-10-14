@@ -1,6 +1,6 @@
 # Cours
 
-- Seconde (à venir)
+- Seconde
 - Première NSI
 - Terminale NSI
 - BTS SIO
