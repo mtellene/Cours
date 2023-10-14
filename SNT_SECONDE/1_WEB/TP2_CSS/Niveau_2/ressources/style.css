@@ -1,0 +1,17 @@
+body{
+	background-color : #ff00aa;
+}
+.cadre{
+	background-color : #00ffff;
+	text-align : center;
+	width:25%;
+	margin-top : 5em;
+}
+.cadrebody{
+	margin : 3em;
+	padding : 3em;
+}
+.cadre>footer{
+	padding-bottom : 0.5em;
+	font-style: italic;
+}
