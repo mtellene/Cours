@@ -1,0 +1,42 @@
+h1{
+    text-align: center;
+    border: 5px double blue;
+    background-color: chocolate;
+}
+
+#p1{
+    text-align: center;
+}
+
+#p2{
+    color: red;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#p3{
+    text-align: right;
+}
+
+.date{
+    text-align: justify;
+    color: green;
+    font-style: italic;
+}
+
+#section_date{
+    background-color: SpringGreen;
+}
+
+#section_inventeur{
+    background-color: LightSalmon;
+}
+
+body{
+    background-color: SkyBlue;
+}
+
+h3{
+    text-align: center;
+    text-decoration: underline;
+}
