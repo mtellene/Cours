@@ -2,6 +2,7 @@ body{
 	background-color : #B2C8BA;
 	font-family:'Courier New', Courier, monospace;
 }
+
 .cadre{
 	background-color : #86A789;
 	text-align : center;
@@ -13,10 +14,12 @@ body{
 	border-radius: 5%;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 7px 5px 0 rgba(0, 0, 0, 0.24);
 }
+	
 .cadrebody{
 	margin : 3em;
 	padding : 3em;
 }
+	
 .cadre>footer{
 	padding-bottom : 0.5em;
 	font-style: italic;
