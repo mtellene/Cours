@@ -218,7 +218,7 @@ Victor a acheté Avenue de la République
 | Code propre | 1 |
 | Code optimisé | 1 |
 | Commentaire | 1 |
-| Le jeu s’arrête quand un jour est en faillite | 0.5 |
+| Le jeu s’arrête quand un joueur est en faillite | 0.5 |
 
 
 ## VII - Bonus
