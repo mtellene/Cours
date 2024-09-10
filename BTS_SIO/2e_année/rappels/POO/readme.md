@@ -12,14 +12,11 @@
 ### 4/ ```Plateau.py```
 ### 5/ Autre
 
-
 ## VII - Bonus
 
 ---
 
 ## I - Mise en place
-
-**Organisation :** aller dans votre dossier personnel, puis dans le dossier « programmation orientée objet » (ou « POO »), dans ce dossier, créer un dossier « projet », c’est ce dossier qui contiendra le travail fait lors de ce projet.
 
 Vous n’allez pas partir de rien pour ce projet, la base du projet se trouve dans le dossier ```code/```. Les fichiers de ce dossier sont incomplets et le but de ce projet est de rendre tout ceci fonctionnel.
 
@@ -38,13 +35,13 @@ Les règles de ce jeu étant multiples et complexes, nous allons simplifier quel
 
 — un joueur a un solde, mais pas de liste de billets ; par exemple si un joueur a un solde de 10, on ne se demande pas si c’est un billet de 10, deux de 5, dix de 1, ...
 
-— les gares, les cases chance, caisse de communauté, impôts et compagnie d’eau et d’électricité, ne seront pas traitées
+— les gares, les cases « chance », caisse de communauté, impôts et compagnie d’eau et d’électricité, ne seront pas traitées
 
 — les cases « Départ », « Prison », « Parc gratuit » et « Aller en prison », seront des cases sans traitement (rien ne se passe)
 
 — un joueur passant par la case « Départ » reçoit 200
 
-— une maison augmente le loyer du terrain de 1, 2, un hôtel de 1, 4
+— une maison augmente le loyer du terrain de 1.2, un hôtel de 1.4
 
 
 ## III - Explication des classes
@@ -58,12 +55,11 @@ Méthode de ```Plateau``` :
 ```Case_speciale.py``` : les équivalents des cases spéciales dans le « vrai » jeu sont les gares, les cases chance, ... . Une case spéciale est définie
 par un nom.
 
-```Joueur.py``` : un joueur est défini par un nom, un compte, une liste de propriétés et une position. Pour tous les joueurs, démarrent avec 1500, aucune propriété et une position égale à (0, 0).
+```Joueur.py``` : un joueur est défini par un nom, un compte, une liste de propriétés et une position. Tous les joueurs démarrent avec 1500, aucune propriété et une position égale à *(0, 0)*.
 
 Méthodes de ```Joueur``` :
 
 — ```tirer_de``` : le joueur tire le dé
-
 
 — ```deplacement``` : le joueur se déplace sur le plateau
 
@@ -121,7 +117,7 @@ Méthodes de ```Partie``` :
 
 Le plateau peut être représenté de la manière suivante :
 
-![graphe TP](https://github.com/mtellene/NSI/blob/main/TERMINALE/99_PROJETS/asset/plateau.png)
+![graphe TP](https://github.com/mtellene/Cours/blob/main/BTS_SIO/2e_ann%C3%A9e/rappels/POO/asset/plateau.png)
 
 Si le joueur se trouve sur la case « Boulevard de Belleville », alors les coordonnées du joueur sont *(0,1)*. De la même manière s’il se trouve sur la case « Prison »(case qui fait l’angle gauche
 inférieur), les coordonnées du joueur sont *(1,0)*.
