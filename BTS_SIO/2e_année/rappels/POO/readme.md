@@ -149,7 +149,7 @@ Mon choix : 3
 Victor est sur la case : Départ
 
 Que voulez-vous faire ?
-1 - Tirer le d é
+1 - Tirer le dé
 2 - Consulter mon compte
 3 - Voir sur quelle case je suis
 Mon choix : 1
