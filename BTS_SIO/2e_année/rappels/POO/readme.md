@@ -225,14 +225,14 @@ Victor a acheté Avenue de la République
 
 Si tous les points précédents ont été faits, vous pouvez ajouter des éléments à votre jeu. Voici une liste non exhaustive d’éléments à rajouter :
 
-— jouer avec 2 dés et rajouter la règle du double, ainsi que celle du troisième double consécutif
+— jouer avec 2 dés et rajouter la règle du double, ainsi que celle du troisième double consécutif 🎲🎲 
 
 — la case « Aller en prison » déplace un joueur en prison et ne peux plus jouer de trois tours
 
-— rajouter le système de l’hypothèque
+— rajouter le système de l’hypothèque 🏠
 
-— rajouter des cases chances
+— rajouter des cases chances 🍀
 
-— rajouter des gares
+— rajouter des gares 🚄
 
 — rajouter une interface graphique
