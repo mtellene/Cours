@@ -179,6 +179,7 @@ Victor a acheté Avenue de la République
 | :-: | :-: |
 | ```__init__``` | 1 |
 | ```avoir_joueur_avec_nom``` | 1 |
+| ```choix_action``` | 2 |
 | ```deplacement``` | 1 |
 | ```traitement_post_deplacement``` | 2 |
 | ```joueur_faillite``` | 0.5 |
