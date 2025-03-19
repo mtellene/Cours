@@ -121,7 +121,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Admin Admin', 'admin@cub.corsica', '2022-01-29 08:57:33', '$2y$10$NdqDd3a3XIAq1ikEsWKH0Os7qnhYAd4e.3Q8JQpF4NvSlr.RBemCG', NULL, '2022-01-29 08:57:33', '2022-01-29 08:57:33');
+(1, 'Admin Admin', 'admin@cub.avignon', '2022-01-29 08:57:33', '$2y$10$NdqDd3a3XIAq1ikEsWKH0Os7qnhYAd4e.3Q8JQpF4NvSlr.RBemCG', NULL, '2022-01-29 08:57:33', '2022-01-29 08:57:33');
 
 --
 -- Index pour les tables déchargées
