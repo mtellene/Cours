@@ -1,0 +1,99 @@
+/*style pour la page index.html*/
+
+body{
+    background-color: #141414;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    color: white
+}
+
+#page_accueil{
+    margin-top: 10%;
+}
+
+body > header > h1{
+    font-size: 3.5vw;
+    text-align: center;
+}
+
+#profils > ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#profils > ul > li > a{
+    padding: 0px 10px;
+    text-decoration: none;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+}
+
+#profils > ul > li > a > img{
+    border-radius: 10%;
+}
+
+#profils > ul > li > a > span{
+    padding: 15px 0px;
+    font-size: 1.3vw;
+    text-align: center;
+}
+
+/*style pour la page profil.html*/
+
+body > header > nav > ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+body > header > nav > ul > li{
+    padding: 0px 20px;
+}
+
+#tendances_actuelles{
+    margin-top: 100px;
+}
+
+#tendances_actuelles > h2{
+    padding: 0px 40px
+}
+
+#series{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#series > button{
+    border: none;
+    font-size: 3em;
+    background-color: #141414;
+    display: none;
+    cursor: pointer;
+}
+
+#series:hover button{
+    display: inline;
+}
+
+#series > ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0px;
+}
+
+#series > ul > li{
+    display: flex;
+    flex-direction: column;
+}
+
+#series > ul > li > img{
+    border-radius: 5%;
+    padding: 5px;
+}
+
+#series > ul > li > span{
+    padding: 20px 0px;
+    font-size: 1.3vw;
+}
