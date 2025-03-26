@@ -1,6 +1,6 @@
 <?php
 // Database connection settings
-$host = '127.0.0.1';
+$host = 'netflux-db';
 $dbname = 'netflux';
 $username = 'netuser';
 $password = 'netpass';
@@ -43,6 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Accueil - Netflux</title>
 </head>
 <body>

@@ -46,15 +46,15 @@ CREATE TABLE `profil` (
 -- Déchargement des données de la table `users`
 --
 
-INSERT INTO `users` (`id`, `id_compte`, `nom`, `img`) VALUES
-(1, '1', 'Toto', `assets/image/profile_icons/profile_icon1.png`),
-(2, '1', 'Jean-Jacques', `assets/image/profile_icons/profile_icon2.png`),
-(3, '2', 'Titi', `assets/image/profile_icons/profile_icon1.png`),
-(4, '2', 'Gros Minet', `assets/image/profile_icons/profile_icon4.png`),
-(5, '3', 'Maxime', `assets/image/profile_icons/profile_icon4.png`),
-(6, '3', 'Pierre', `assets/image/profile_icons/profile_icon1.png`),
-(7, '3', 'Victor', `assets/image/profile_icons/profile_icon2.png`),
-(8, '3', 'Yoann', `assets/image/profile_icons/profile_icon3.png`),
+INSERT INTO `profil` (`id`, `id_compte`, `nom`, `img`) VALUES
+(1, '1', 'Toto', 'assets/image/profile_icons/profile_icon1.png'),
+(2, '1', 'Jean-Jacques', 'assets/image/profile_icons/profile_icon2.png'),
+(3, '2', 'Titi', 'assets/image/profile_icons/profile_icon1.png'),
+(4, '2', 'Gros Minet', 'assets/image/profile_icons/profile_icon4.png'),
+(5, '3', 'Maxime', 'assets/image/profile_icons/profile_icon4.png'),
+(6, '3', 'Pierre', 'assets/image/profile_icons/profile_icon1.png'),
+(7, '3', 'Victor', 'assets/image/profile_icons/profile_icon2.png'),
+(8, '3', 'Yoann', 'assets/image/profile_icons/profile_icon3.png');
 
 --
 -- Index pour les tables déchargées
@@ -64,8 +64,13 @@ INSERT INTO `users` (`id`, `id_compte`, `nom`, `img`) VALUES
 -- Index pour la table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `users_login_unique` (`login`);
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `profil`
+--
+ALTER TABLE `profil`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT pour les tables déchargées
