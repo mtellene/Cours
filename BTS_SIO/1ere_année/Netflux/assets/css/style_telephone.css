@@ -1,0 +1,57 @@
+/*style pour index.html*/
+#page_accueil > header > h1{
+    font-size: 10vw;
+}
+
+#profils > ul{
+    margin-top: 30%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#profils > ul > li{
+    width: 35%;
+    padding-top: 10%;
+}
+
+#profils > ul > li > a > span{
+    font-size: 5vw;
+    color: white;
+}
+
+/*style pour profil.html*/
+body > header > nav > ul{
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 10%;
+}
+
+body > header > nav > ul > li{
+    font-size: 3vw;
+}
+
+body > header > nav > ul > li:nth-last-child(-n + 3){
+    display: none;
+}
+
+#tendances_actuelles{
+    margin-top: 40%;
+}
+
+#tendances_actuelles > h2{
+    font-size: 5vw;
+}
+
+#series > button{
+    font-size: 5em;
+    display: block;
+}
+
+#series > ul{
+    flex-direction: column;
+}
+
+#series > ul > li > span{
+    font-size: 3vw;
+    text-align: center;
+}
