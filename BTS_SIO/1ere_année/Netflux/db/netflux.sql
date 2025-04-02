@@ -47,14 +47,14 @@ CREATE TABLE `profil` (
 --
 
 INSERT INTO `profil` (`id`, `id_compte`, `nom`, `img`) VALUES
-(1, '1', 'Toto', 'assets/image/profile_icons/profile_icon1.png'),
-(2, '1', 'Jean-Jacques', 'assets/image/profile_icons/profile_icon2.png'),
-(3, '2', 'Titi', 'assets/image/profile_icons/profile_icon1.png'),
-(4, '2', 'Gros Minet', 'assets/image/profile_icons/profile_icon4.png'),
-(5, '3', 'Maxime', 'assets/image/profile_icons/profile_icon4.png'),
-(6, '3', 'Pierre', 'assets/image/profile_icons/profile_icon1.png'),
-(7, '3', 'Victor', 'assets/image/profile_icons/profile_icon2.png'),
-(8, '3', 'Yoann', 'assets/image/profile_icons/profile_icon3.png');
+(1, '1', 'Toto', 'assets/image/profil_icons/profil_icon1.png'),
+(2, '1', 'Jean-Jacques', 'assets/image/profil_icons/profil_icon2.png'),
+(3, '2', 'Titi', 'assets/image/profil_icons/profil_icon1.png'),
+(4, '2', 'Gros Minet', 'assets/image/profil_icons/profil_icon4.png'),
+(5, '3', 'Maxime', 'assets/image/profil_icons/profil_icon4.png'),
+(6, '3', 'Pierre', 'assets/image/profil_icons/profil_icon1.png'),
+(7, '3', 'Victor', 'assets/image/profil_icons/profil_icon2.png'),
+(8, '3', 'Yoann', 'assets/image/profil_icons/profil_icon3.png');
 
 --
 -- Index pour les tables déchargées
